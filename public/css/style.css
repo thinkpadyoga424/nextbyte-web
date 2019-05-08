@@ -432,7 +432,7 @@ body {
   font-family: "Dosis", sans-serif;
   color: #fff;
   position: relative;
-  border: 2px solid #53e1ff;
+  border: 2px solid #51dfa2;
   border-radius: 5px;
   padding: 8px 30px;
   overflow: hidden;
@@ -441,8 +441,8 @@ body {
   font-weight: 600;
 }
 .btn-transparent {
-  border-color: #53e1ff;
-  color: #53e1ff;
+  border-color: #51dfa2;
+  color: #51dfa2;
   padding: 10px 30px;
 }
 .btn-icon {
@@ -612,8 +612,8 @@ body {
   transform: scale(20);
 }
 .btn.style-3 {
-  border-color: #41bcfe !important;
-  color: #002197 !important;
+  border-color: #389c71 !important;
+  color: #48c891 !important;
   position: relative;
 }
 .btn.style-3:before {
@@ -623,7 +623,7 @@ body {
   width: 10px;
   position: absolute;
   content: "";
-  background: #002197;
+  background: #73e5b4;
   -webkit-transition: 0.3s all linear;
   transition: 0.3s all linear;
   opacity: 0;
@@ -640,8 +640,8 @@ body {
 
 .style-4 {
   border: 2px solid !important;
-  border-color: #40a798 !important;
-  color: #40a798 !important;
+  border-color: #73e5b4 !important;
+  color: #73e5b4 !important;
   position: relative;
 }
 .style-4:after {
@@ -649,7 +649,7 @@ body {
   width: 100%;
   content: "";
   position: absolute;
-  background: #41bcfe;
+  background: #73e5b4;
   left: 0;
   top: 0;
   border-radius: 5px;
@@ -662,6 +662,7 @@ body {
 .style-4:hover:after {
   width: 80%;
   left: 10%;
+  background: #73e5b4;
 }
 
 .waves-effect {
@@ -4882,7 +4883,7 @@ img.line-chart {
   padding: 16px 20px 16px 20px;
   border-left: 2px solid #fff;
   margin-left: 45px;
-  color: #fff;
+  color: #bfbfbf;
   font-size: 14px;
   font-style: italic;
   line-height: 30px;
@@ -5822,7 +5823,7 @@ img.line-chart {
     29: About VPN
 ===============================================*/
 .about--vpn-wrap h2 {
-  color: #002197;
+  color: #48c891;
   font-weight: 700;
   margin-bottom: 37px;
 }
