@@ -322,7 +322,7 @@ We may release future updates so it will overwrite this file. it's better and sa
   //Google Map
   if ($("#google-map").length) {
     var googleMapSelector = $("#google-map"),
-      myCenter = new google.maps.LatLng(-6.275072, 106.7999232);
+      myCenter = new google.maps.LatLng(-6.2461106, 106.8023131);
 
     function initialize() {
       var mapProp = {
