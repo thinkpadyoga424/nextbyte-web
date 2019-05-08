@@ -2,3 +2,14 @@
     Custom Stylesheet (Any custom styling you want to apply should be defined here).
 ====================================================================================*/
 
+.about-page-title {
+  color: #40a798 !important;
+}
+
+.about-page-subtitle {
+  color: #63c3b5 !important;
+}
+
+.about-page-banner {
+  color: #ffffff !important;
+}
