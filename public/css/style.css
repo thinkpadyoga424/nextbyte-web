@@ -640,8 +640,8 @@ body {
 
 .style-4 {
   border: 2px solid !important;
-  border-color: #002197 !important;
-  color: #002197 !important;
+  border-color: #40a798 !important;
+  color: #40a798 !important;
   position: relative;
 }
 .style-4:after {
@@ -7586,7 +7586,7 @@ img.line-chart {
   position: absolute;
   height: 50px;
   width: 50px;
-  border: 2px solid #53e1ff;
+  border: 2px solid #40a798;
   border-radius: 50%;
   top: 49%;
   text-align: center;
@@ -7596,14 +7596,14 @@ img.line-chart {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   padding-left: 5px;
-  background: #53e1ff;
+  background: #40a798;
   color: #fff;
 }
 .visite-us-video {
   position: relative;
 }
 .visite-us-video .hover-style-ripple:before {
-  border: 2px solid #53e1ff;
+  border: 2px solid #b3c8cc;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
