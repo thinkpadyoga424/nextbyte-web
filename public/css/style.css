@@ -418,7 +418,7 @@ body {
   background-color: #e48f0b;
 }
 .footer-bg-h6 {
-    background-color: #3c6382;
+  background-color: #3c6382;
 }
 .footer-bg-about {
   background: #1748ff;
@@ -2961,8 +2961,8 @@ label input[type="radio"] {
 }
 
 .feature-card-head {
-    margin-bottom: 15px;
-    width: 30px;
+  margin-bottom: 15px;
+  width: 30px;
 }
 
 .feature-card-body ul {
@@ -8260,9 +8260,9 @@ img.line-chart {
   transition: 0.3s all linear;
 }
 .footer--social-list li a {
-    -webkit-transition: 0.3s all linear;
-    transition: 0.3s all linear;
-    color: #3c6382;
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+  color: #3c6382;
 }
 .footer--social-list li:hover {
   background: #53e1ff;
@@ -8534,10 +8534,10 @@ footer.footer-type1 {
 }
 
 .footer-type5 .footer--social-list li a {
-    color: #3c6382;
+  color: #3c6382;
 }
-.footer-type5 .footer--social-list li:hover a{
-    color: #51dfa2;
+.footer-type5 .footer--social-list li:hover a {
+  color: #51dfa2;
 }
 .footer-type5 .footer--social-list li:hover {
   background: #fff;
