@@ -2,6 +2,7 @@
     Custom Stylesheet (Any custom styling you want to apply should be defined here).
 ====================================================================================*/
 
+/* ============== about page style =================== */
 .about-page-title {
   color: #40a798 !important;
 }
@@ -20,4 +21,19 @@
 
 .about-a:hover {
   color: #f0f0f0 !important;
+}
+
+/* ============== term page style =================== */
+
+.term-background {
+  background: #424242 !important;
+}
+
+/* ============== footer page style =================== */
+.footer-a {
+  color: #f3f3f3 !important;
+}
+
+.footer-a:hover {
+  color: #63c3b5 !important;
 }
