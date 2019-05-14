@@ -402,9 +402,15 @@ body {
 }
 
 .home6-section-bg {
-  background: #fcfcfc;
+  background: #2d3436;
   position: relative;
 }
+
+.home6-team-bg {
+  background: #fff;
+  position: relative;
+}
+
 .common-sec-bg {
   background: #fcfcfc;
 }
@@ -1465,7 +1471,7 @@ label input[type="radio"] {
   color: #51dfa2;
 }
 .home-page6 .section-title h2 {
-  color: #333333;
+  color: #51dfa2;
   font-weight: 700;
   position: relative;
 }
@@ -2946,6 +2952,7 @@ label input[type="radio"] {
 .feature-card-wrap {
   margin-top: -120px;
 }
+
 .single-feature-card {
   padding: 40px;
   border-radius: 5px;
@@ -6306,7 +6313,7 @@ img.line-chart {
 .single--pricing-plan.active .plan-top-head h4 {
   color: #fff;
 }
-.single--pricing-plan.active .plantop-head-text h2.h1 {
+.single--pricing-plan.active .plantop-head-text h4.h1 {
   color: #fff;
 }
 .single--pricing-plan.active .head-text-float > span {
@@ -6345,11 +6352,16 @@ img.line-chart {
   padding-bottom: 30px;
 }
 
-.plantop-head-text h2.h1 {
-  font-size: 60px;
+.plantop-head-text h4.h1 {
+  font-size: 30px;
   font-weight: 900;
   font-family: "Poppins", sans-serif;
 }
+
+/* .plantop-head-text h3.h2 {
+  color: #fff;
+} */
+
 
 .plantop-head-text h2.h1 span {
   font-weight: 300;
