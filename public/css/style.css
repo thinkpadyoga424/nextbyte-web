@@ -2657,7 +2657,8 @@ label input[type="radio"] {
   animation: rotate-2d 30s linear infinite;
 }
 .banner4-image-wrap .main-image {
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   position: relative;
   z-index: 1;
 }
@@ -2820,7 +2821,7 @@ label input[type="radio"] {
 .home-banner6 .banner--inner-text {
   z-index: 1;
   position: relative;
-  margin-top: 84px;
+  margin-top: 45px;
 }
 .home-banner6 .banner--inner-text h1 {
   color: #fff;
@@ -5856,8 +5857,6 @@ img.line-chart {
 }
 .about--vpn-wrap a.btn:hover {
   color: #fff !important;
-  border-color: #002197 !important;
-  background: #002197;
 }
 /*29.01: how it works*/
 .how--works-wrap {
@@ -6357,10 +6356,6 @@ img.line-chart {
   font-weight: 900;
   font-family: "Poppins", sans-serif;
 }
-
-/* .plantop-head-text h3.h2 {
-  color: #fff;
-} */
 
 
 .plantop-head-text h2.h1 span {

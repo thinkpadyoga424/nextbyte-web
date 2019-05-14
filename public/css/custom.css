@@ -2,6 +2,14 @@
     Custom Stylesheet (Any custom styling you want to apply should be defined here).
 ====================================================================================*/
 
+.about-image {
+  margin-top: 100px;
+}
+
+.list-unstyled img {
+  width: 200px;
+}
+
 /* ============== about page style =================== */
 .about-paragraph {
   font-size: 13pt;
