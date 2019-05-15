@@ -1,46 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Document Title -->
-    <title>Nextbyte - Unlock Your Coding Skill for Freedom with Nextbyte</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
-
-    <!-- CSS Files -->
-    <!--==== Google Fonts ====-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Dosis:500,600,700,800&&Poppins:300,400,500,600,900"
-      rel="stylesheet"
-    />
-
-    <!--==== Bootstrap css file ====-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-
-    <!--==== Font-Awesome css file ====-->
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-
-    <!-- Owl Carusel css file -->
-    <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css" />
-
-    <!-- Magnific-Popup css file -->
-    <link rel="stylesheet" href="plugins/Magnific-Popup/magnific-popup.css" />
-
-    <!--==== Style css file ====-->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!--==== Responsive css file ====-->
-    <link rel="stylesheet" href="css/responsive.css" />
-
-    <!--==== Custom css file ====-->
-    <link rel="stylesheet" href="css/custom.css" />
-  </head>
+  <% include ./partials/head %>
 
   <body>
     <!-- Preloader -->
@@ -51,82 +11,7 @@
     </div>
     <!-- End Of Preloader -->
 
-    <!-- Main header -->
-    <header class="header">
-      <!-- Start Header Navbar-->
-      <div class="main-header main-header6">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-xl-3 col-lg-2 col-md-4 col-sm-5 col-7">
-              <!-- Logo -->
-              <div class="logo" data-animate="fadeInUp" data-delay=".65">
-                <a href="/">
-                  <img
-                    class="default-logo"
-                    src="img/logo.png"
-                    data-rjs="2"
-                    alt="crypdrone"
-                  />
-                  <img
-                    class="sticky-logo"
-                    src="img/logo.png"
-                    data-rjs="2"
-                    alt="crypdrone"
-                  />
-                </a>
-              </div>
-              <!-- End of Logo -->
-            </div>
-            <div class="col-xl-9 col-lg-10 col-md-8 col-sm-7 col-5 menu-button">
-              <div class="menu--inner-area clear-fix">
-                <div class="menu-wraper">
-                  <nav data-animate="fadeInUp" data-delay=".80">
-                    <!-- Header-menu -->
-                    <div class="header-menu dosis">
-                      <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li class="active">
-                          <a href="#"
-                            >Programs
-                            <i class="fa fa-angle-down" aria-hidden="true"></i
-                          ></a>
-                          <ul>
-                            <li><a href="/mobile">Mobile Development</a></li>
-                            <li>
-                              <a href="/website">Website Development</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="/faq">FAQ </a>
-                        </li>
-                        <li><a href="/contact">Contact</a></li>
-                      </ul>
-                    </div>
-                    <!-- End of Header-menu -->
-                  </nav>
-                </div>
-              </div>
-              <!-- signup/singout button -->
-              <div
-                class="signup--out-btn text-right"
-                data-animate="fadeInUp"
-                data-delay="1"
-              >
-                <a href="#" class="d-block waves-effect"
-                  ><i class="fa fa-download" aria-hidden="true"></i
-                  ><span>Download Our App</span></a
-                >
-              </div>
-              <!--End of signup/singout button -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Header Navbar-->
-    </header>
-    <!-- End of Main header -->
+    <% include ./partials/navbar %>
 
     <!-- page title wrap-->
     <section
@@ -211,61 +96,6 @@
     </section>
     <!-- End of coming soon inner -->
 
-    <% include ./partials/footer %>
-
-    <!-- back to top -->
-    <div class="back-to-top">
-      <a href="#"><i class="fa fa-chevron-up"></i></a>
-    </div>
-    <!-- back to top -->
-
-    <!-- JS Files -->
-    <!-- ==== JQuery 3.3.1 js file==== -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-
-    <!-- ==== Bootstrap js file==== -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-
-    <!-- ==== JQuery Waypoint js file==== -->
-    <script src="plugins/waypoints/jquery.waypoints.min.js"></script>
-
-    <!-- ==== Parsley js file==== -->
-    <script src="plugins/parsley/parsley.min.js"></script>
-
-    <!-- ==== Ratina js file==== -->
-    <script src="plugins/retinajs/retina.min.js"></script>
-
-    <!-- ==== parallax js==== -->
-    <script src="plugins/parallax/parallax.js"></script>
-
-    <!-- ==== Owl Carousel js file==== -->
-    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
-
-    <!-- ====Count down==== -->
-    <script src="plugins/countdown/jquery.countdown.min.js"></script>
-
-    <!-- ====Chart js file ==== -->
-    <script src="plugins/chart-js/echarts.min.js"></script>
-
-    <!-- ==== Menu  js file==== -->
-    <script src="js/menu.min.js"></script>
-
-    <!-- ====Magnific-Popup js file==== -->
-    <script src="plugins/Magnific-Popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- ====Counter js file=== -->
-    <script src="plugins/waypoints/jquery.counterup.min.js"></script>
-
-    <!--==== google map api key ====-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2D8wrWMY3XZnuHO6C31uq90JiuaFzGws"></script>
-
-    <!-- ====matrial js file==== -->
-    <script src="js/matrial.js"></script>
-
-    <!-- ==== Script js file==== -->
-    <script src="js/scripts.js"></script>
-
-    <!-- ==== Custom js file==== -->
-    <script src="js/custom.js"></script>
+    <% include ./partials/footer %> <% include ./partials/script %>
   </body>
 </html>
