@@ -165,24 +165,29 @@
     <!-- Our Team Section -->
     <section data-animate="fadeInUp" data-delay=".80" class="pt-130 pb-70">
       <div class="container">
-
         <div class="row heading">
           <div class="col-md-12 col-md-offset-8">
             <h2 class="text-center bottom-line">Meet Our Team</h2>
             <p class="subheading text-center">Creative Squad</p>
           </div>
         </div>
-      
+
         <div class="row team-row">
-      
+          <% for(var i = 0; i < data[0].length ; i++ ) { %>
+          <!-- <% if (i%2 === 0) { %>
+        <div class="row team-row">
+      <% } %> -->
           <div class="col-md-4 col-sm-6 team-wrap">
             <div class="team-member text-center">
               <div class="team-img">
-                <img src="http://deothemes.com/envato/enigma/html/img/team_1.jpg" alt="">
+                <img
+                  src="<%= data[0][i].avatar %>"
+                  alt=""
+                />
                 <div class="overlay">
                   <div class="team-details text-center">
                     <p>
-                      Our web design team will spend time with our digital marketing team.
+                      <%= data[0][i].content %>
                     </p>
                     <div class="socials mt-20">
                       <a href="#"><i class="fa fa-facebook"></i></a>
@@ -193,60 +198,13 @@
                   </div>
                 </div>
               </div>
-              <h6 class="team-title">Fuadit Muhammad</h6>
-              <span>Chie Technology Officer</span>
+              <h6 class="team-title"><%= data[0][i].name %></h6>
+              <span><%= data[0][i].job_position %></span>
             </div>
           </div>
           <!-- end team member -->
-      
-          <div class="col-md-4 col-sm-6 team-wrap">
-            <div class="team-member text-center">
-              <div class="team-img">
-                <img src="http://deothemes.com/envato/enigma/html/img/team_2.jpg" alt="">
-                <div class="overlay">
-                  <div class="team-details text-center">
-                    <p>
-                      Our web design team will spend time with our digital marketing team.
-                    </p>
-                    <div class="socials mt-20">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-envelope"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h6 class="team-title">Rachmad Isdawan Saputra</h6>
-              <span>Chief Executive Officer</span>
-            </div>
-          </div>
-          <!-- end team member -->
-      
-          <div class="col-md-4 col-sm-6 team-wrap">
-            <div class="team-member last text-center">
-              <div class="team-img">
-                <img src="http://deothemes.com/envato/enigma/html/img/team_3.jpg" alt="">
-                <div class="overlay">
-                  <div class="team-details text-center">
-                    <p>
-                      Our web design team will spend time with our digital marketing team.
-                    </p>
-                    <div class="socials mt-20">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                      <a href="#"><i class="fa fa-envelope"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h6 class="team-title">Ali Aidid</h6>
-              <span>Head of Product & Opertions</span>
-            </div>
-          </div>
-          <!-- end team member -->
-      
+
+          <% } %>
         </div>
       </div>
     </section>
