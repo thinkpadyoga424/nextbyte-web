@@ -2,12 +2,27 @@
     Custom Stylesheet (Any custom styling you want to apply should be defined here).
 ====================================================================================*/
 
+/* ============== home page style =================== */
+
 .about-image {
   margin-top: 100px;
 }
 
 .list-unstyled img {
   width: 200px;
+}
+
+.syllabus-style-input {
+  font-size: 12px;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
 }
 
 /* ============== about page style =================== */
