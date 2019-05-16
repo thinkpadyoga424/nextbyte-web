@@ -7,7 +7,7 @@ router.get("/", function(req, res, next) {
   let data = [];
 
   axios
-    .get("https://us-central1-dbnextbyte.cloudfunctions.net/api/v1/faqs")
+    .get("https://us-central1-dbnextbyte.cloudfunctions.net/api/v1/faq-website")
     .then(response => {
       data.push(response.data.data);
       console.log(data[0][1].type);
