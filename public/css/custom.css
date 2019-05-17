@@ -101,12 +101,15 @@
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 .team-details {
+  font-size: 14px;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: auto;
   left: 0;
   padding: 5%;
   overflow: hidden;
@@ -124,7 +127,7 @@
 
 .team-img:hover .team-details {
   opacity: 1;
-  margin-top: -80px;
+  margin-top: auto;
 }
 
 .team-img:hover .overlay {
