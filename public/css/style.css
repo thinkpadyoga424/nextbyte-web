@@ -6727,18 +6727,19 @@ img.line-chart {
   background-color: #41bcfe;
 }
 .zigzag-inner.left {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 85px;
+  padding-bottom: 85px;
   position: relative;
   z-index: 1;
 }
 .zigzag-inner.right {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 85px;
+  padding-bottom: 85px;
   position: relative;
   z-index: 1;
   padding-left: 40px;
 }
+
 .zigzag-inner h2 {
   color: #fff;
   font-weight: 700;
@@ -6827,12 +6828,13 @@ img.line-chart {
 .zigzag-wrap h3 {
   color: #fff;
   font-weight: 700;
+  font-size: 30px;
   margin-bottom: 24px;
 }
 
 .zigzag-wrap p {
   color: #fff;
-  margin-bottom: 42px;
+  margin-bottom: 32px;
 }
 .zigzag-wrap .btn-fill {
   border-width: 0;
