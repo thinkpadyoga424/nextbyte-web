@@ -181,3 +181,11 @@
 .footer-a:hover {
   color: #63c3b5 !important;
 }
+
+.overview-title {
+  color: #63c3b5 !important;
+}
+
+.overview-content {
+  color: #f0f0f0 !important;
+}
