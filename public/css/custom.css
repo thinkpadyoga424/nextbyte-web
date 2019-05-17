@@ -171,6 +171,12 @@
   background: #424242 !important;
 }
 
+/* ============== term page style =================== */
+
+.register-background {
+  background: #51dfa2 !important;
+}
+
 /* ============== footer page style =================== */
 .footer-a {
   color: #f3f3f3 !important;
@@ -191,4 +197,10 @@
 
 .overview-content {
   color: #f0f0f0 !important;
+}
+
+/* ============== Contact Us > Form > Select Style =================== */
+.theme-select-style {
+  border: none;
+  color: #40a798;
 }

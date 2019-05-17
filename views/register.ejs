@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <% include ./partials/head %>
+
+  <body>
+    <!-- Preloader -->
+    <div class="preLoader">
+      <div class="preload-img">
+        <img src="img/favicon.png" alt="" class="pre-img" />
+      </div>
+    </div>
+    <!-- End Of Preloader -->
+
+    <% include ./partials/navbar %>
+
+    <!-- contact section -->
+    <section
+      class="register-background pt-50 pb-50"
+      data-animate="fadeInUp"
+      data-delay="1.05"
+    ></section>
+    <section
+      class="term-background pt-80 pb-80"
+      data-animate="fadeInUp"
+      data-delay="1.05"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- contact info -->
+            <div class="contact-form-info">
+              <h2 class="about-page-title">Terhubunglah Bersama Kami</h2>
+              <p>
+                Kami ingin tahu lebih banyak tentang kamu. Tim kami akan sangat
+                senang untuk menjawab semua pertanyaan kamu. Lengkapi form yang
+                ada dibawah dan kami akan segera menjawab pertanyaan kamu.
+              </p>
+            </div>
+            <!-- End of contact info -->
+
+            <div class="row">
+              <div class="col-md-10"></div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!-- contact form -->
+            <h2 class="about-page-title mb-5">Form Pendaftaran</h2>
+            <div class="contact-form contact-page-form parsley-validate">
+              <form action="" method="post" novalidate>
+                <!-- Nama -->
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="theme-input-style"
+                    required
+                  />
+                  <label class="form-control-placeholder" for="name"
+                    >Nama Lengkap</label
+                  >
+                </div>
+                <!-- End of Nama -->
+
+                <!-- Email -->
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    class="theme-input-style"
+                    required
+                  />
+                  <label class="form-control-placeholder" for="email"
+                    >Email</label
+                  >
+                </div>
+                <!--End of Email -->
+
+                <!-- No Telp -->
+                <div class="form-group">
+                  <input
+                    type="number"
+                    name="phone"
+                    class="theme-input-style"
+                    required
+                  />
+                  <label class="form-control-placeholder" for="phone"
+                    >No Handphone</label
+                  >
+                </div>
+                <!--End of No Telp -->
+
+                <!-- Alamat -->
+                <div class="form-group">
+                  <textarea
+                    name="address"
+                    class="theme-input-style"
+                    required
+                  ></textarea>
+                  <label class="form-control-placeholder" for="address"
+                    >Alamat</label
+                  >
+                </div>
+                <!--End of Alamat -->
+
+                <!-- Kota -->
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="city"
+                    class="theme-input-style"
+                    required
+                  />
+                  <label class="form-control-placeholder" for="city"
+                    >Kota Anda</label
+                  >
+                </div>
+                <!--End of Kota -->
+
+                <!-- Pendidikan -->
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="pendidikan"
+                    class="theme-input-style"
+                    required
+                  />
+                  <label class="form-control-placeholder" for="pendidikan"
+                    >Pendidikan Terakhir</label
+                  >
+                </div>
+                <!--End of Kota -->
+
+                <!-- Pekerjaan -->
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="job"
+                    class="theme-input-style"
+                    required
+                  />
+                  <label class="form-control-placeholder" for="job"
+                    >Pekerjaan Sekarang</label
+                  >
+                </div>
+                <!--End of Pekerjaan -->
+
+                <!-- Program -->
+                <div class="form-group">
+                  <select
+                    type="text"
+                    name="program"
+                    class="theme-input-style"
+                    placeholder="Pilih Program"
+                    required
+                  >
+                    <option class="theme-select-style"
+                      >Mobile Development</option
+                    >
+                    <option class="theme-select-style"
+                      >Website Development</option
+                    >
+                  </select>
+                  <label class="form-control-placeholder" for="program"
+                    >Pilih Program</label
+                  >
+                </div>
+                <!--End of Program -->
+
+                <!-- Dari mana tahu nextbyte ? -->
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="knownextbyte"
+                    class="theme-input-style"
+                    required
+                  />
+                  <label class="form-control-placeholder" for="knownextbyte"
+                    >Dari mana tahu Nextbyte ?</label
+                  >
+                </div>
+                <!--End of dari mana tahu nextbyte ? -->
+
+                <!-- Motivation -->
+                <div class="form-group">
+                  <textarea
+                    name="motivation"
+                    class="theme-input-style"
+                    required=""
+                  ></textarea>
+                  <label class="form-control-placeholder" for="motivation"
+                    >Motivasi Mengikuti Nextbyte ?</label
+                  >
+                </div>
+                <!--End of Motivation -->
+
+                <!-- Harapan -->
+                <div class="form-group">
+                  <textarea
+                    name="hope"
+                    class="theme-input-style"
+                    required=""
+                  ></textarea>
+                  <label class="form-control-placeholder" for="hope"
+                    >Yang di harapkann mengikuti Nextbyte ?</label
+                  >
+                </div>
+                <!--End of Harapan -->
+
+                <button
+                  type="submit"
+                  class="btn contact-btn btn-transparent style-4"
+                >
+                  Kirim
+                </button>
+              </form>
+              <div class="form-response"></div>
+            </div>
+            <!--End of contact form -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of contact section -->
+
+    <% include ./partials/footer %> <% include ./partials/script %>
+  </body>
+</html>
