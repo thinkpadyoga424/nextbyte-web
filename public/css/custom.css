@@ -135,12 +135,15 @@ blockquote p::after {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 .team-details {
+  font-size: 14px;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: auto;
   left: 0;
   padding: 5%;
   overflow: hidden;
@@ -158,7 +161,7 @@ blockquote p::after {
 
 .team-img:hover .team-details {
   opacity: 1;
-  margin-top: -80px;
+  margin-top: auto;
 }
 
 .team-img:hover .overlay {
@@ -214,4 +217,12 @@ blockquote p::after {
 /* ============== mobile page style =================== */
 .footer-a:hover {
   color: #63c3b5 !important;
+}
+
+.overview-title {
+  color: #63c3b5 !important;
+}
+
+.overview-content {
+  color: #f0f0f0 !important;
 }

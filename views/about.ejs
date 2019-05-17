@@ -177,19 +177,16 @@
           <!-- <% if (i%2 === 0) { %>
         <div class="row team-row">
       <% } %> -->
-          <div class="col-md-4 col-sm-6 team-wrap">
+          <div class="mt-4 col-xl-4 col-lg-6 col-sm-12 team-wrap">
             <div class="team-member text-center">
               <div class="team-img">
-                <img
-                  src="<%= data[0][i].avatar %>"
-                  alt=""
-                />
+                <img src="<%= data[0][i].avatar %>" alt="" />
                 <div class="overlay">
-                  <div class="team-details text-center">
-                    <p>
+                  <div class="team-details">
+                    <text>
                       <%= data[0][i].content %>
-                    </p>
-                    <div class="socials mt-20">
+                    </text>
+                    <div class="socials">
                       <a href="#"><i class="fa fa-facebook"></i></a>
                       <a href="#"><i class="fa fa-twitter"></i></a>
                       <a href="#"><i class="fa fa-google-plus"></i></a>
