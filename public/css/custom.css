@@ -25,6 +25,40 @@
   color: #fff;
 }
 
+.quote blockquote {
+  color: #40b281;
+  font-family: Tahoma, sans-serif;
+  font-size: 30px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.quote blockquote p {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+blockquote p::before {
+  content: "“";
+  font-family: Georgia;
+  font-size: 3rem;
+  margin: -1rem 0 0 -1rem;
+  position: absolute;
+  opacity: 0.5;
+}
+
+blockquote p::after {
+  content: "”";
+  font-family: Georgia;
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+.quote blockquote cite {
+  font-size: 1.5rem;
+}
+
+
 /* ============== about page style =================== */
 .about-paragraph {
   font-size: 13pt;
