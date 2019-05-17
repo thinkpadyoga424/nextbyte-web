@@ -41,64 +41,55 @@
       </div>
     </section>
     <!-- End of page title -->
-
-    <!-- Timeline -->
-    <% include ./sections/fullstack-web %>
-    <!-- End of Timeline -->
-
     <!-- coming soon  inner -->
-    <section>
-      <div class="coming-full-width term-background">
-        <!-- coming image -->
-        <div class="coming-right-img d-none d-lg-block"></div>
-        <!-- End of coming image -->
-        <div class="container" data-animate="fadeInUp" data-delay="1.05">
-          <div class="row">
-            <div class="col-md-9 col-lg-5 pr-md-0">
-              <!-- error text -->
-              <div class="coming-text-inner">
-                <h4>Comming Soon</h4>
-                <h1>We are doing great, Almost done...</h1>
-                <p>
-                  Curabitur varius sodales dui, a pellentesque purus fermentum
-                  id. Mauris aliquam ut felis sit amet pellentesque.
-                </p>
-                <div class="error-form">
-                  <form action="#" class="primary-form parsley-validate">
-                    <input type="text" class="error-input" required />
-                    <button type="submit">Notify Me</button>
-                  </form>
-                </div>
-                <div class="coming-social-area">
-                  <ul class="coming-social-list list-unstyled">
-                    <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-google-plus"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-whatsapp"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-instagram"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- End of error text -->
+    <section class="term-background pt-100 pb-100">
+      <div data-animate="fadeInUp" data-delay="1.5" class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <!-- section title -->
+            <div class="section-title type4 mb-30">
+              <span class="dosis about-page-subtitle">Program Overview</span>
+              <h1 class="about-page-title">
+                Ayo Buat Aplikasi Mobile Kamu Sendiri
+              </h1>
             </div>
+            <!-- End of section title -->
+
+            <!-- about our company -->
+            <div class="about-our-company">
+              <p>
+                Mobile Development adalah full training program selama 10 minggu
+                dimana kamu akan di bimbing oleh mentor kami yang tentunya sudah
+                ahli di bidangnya. Mulai dari hal yang fundamental sampai kamu
+                bisa membuat aplikasi kamu sendiri.
+              </p>
+              <p>
+                Terbuka untuk kamu berlatar belakang IT maupun non-IT , karena
+                disini kamu akan diajarkan membangun aplikasi mobile
+                multiplatform Android dan IOS dari arsitektur frontend dan juga
+                arsitektur backend. Diajarkan secara terstruktur dan secara
+                lengkap serta bebas untuk melakukan diskusi dengan mentor.
+              </p>
+              <a
+                href="#websiteSylabus"
+                class="btn btn-transparent waves-effect style-4"
+                >Get Started</a
+              >
+            </div>
+            <!-- End of about our company -->
           </div>
+          <div class="col-md-4"></div>
         </div>
       </div>
     </section>
-    <!-- End of coming soon inner -->
+
+    <!-- Timeline -->
+    <div id="websiteSylabus">
+      <section>
+        <% include ./sections/fullstack-web %>
+      </section>
+    </div>
+    <!-- End of Timeline -->
 
     <% include ./partials/footer %> <% include ./partials/script %>
   </body>
