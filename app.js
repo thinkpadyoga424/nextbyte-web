@@ -13,7 +13,7 @@ var websiteRouter = require("./routes/website");
 var mobileRouter = require("./routes/mobile");
 var termRouter = require("./routes/term");
 var policyRouter = require("./routes/policy");
-
+var registerRouter = require("./routes/register");
 
 var app = express();
 
@@ -36,7 +36,7 @@ app.use("/website", websiteRouter);
 app.use("/mobile", mobileRouter);
 app.use("/term", termRouter);
 app.use("/policy", policyRouter);
-
+app.use("/register", registerRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

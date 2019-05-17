@@ -792,6 +792,7 @@ select.parsley-error {
   border-bottom: 1px solid #fff;
   opacity: 0.3;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  color: #40a798;
 }
 input.theme-input-style:focus {
   opacity: 1;
@@ -804,7 +805,7 @@ textarea.theme-input-style {
 }
 
 .theme-input-style:focus {
-  border-color: #53e1ff;
+  border-color: #40a798 !important;
 }
 
 label input[type="checkbox"],
@@ -816,6 +817,21 @@ label input[type="radio"] {
 
 .form-group {
   position: relative;
+  margin-bottom: 1.5rem;
+}
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+
+.theme-input-style:focus + .form-control-placeholder,
+.theme-input-style:valid + .form-control-placeholder {
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
 }
 
 .table-bordered,
@@ -6356,7 +6372,6 @@ img.line-chart {
   font-weight: 900;
   font-family: "Poppins", sans-serif;
 }
-
 
 .plantop-head-text h2.h1 span {
   font-weight: 300;
