@@ -2821,7 +2821,7 @@ label input[type="radio"] {
 .home-banner6 .banner--inner-text {
   z-index: 1;
   position: relative;
-  margin-top: 45px;
+  margin-top: 30px;
 }
 .home-banner6 .banner--inner-text h1 {
   color: #fff;
@@ -6404,7 +6404,7 @@ img.line-chart {
 .included-every-wrap ul li {
   display: inline-block;
   width: 24%;
-  color: #555555;
+  color: #eee;
   margin-bottom: 23px;
   vertical-align: top;
   padding-left: 30px;
