@@ -1,6 +1,8 @@
 /*==================================================================================
     Custom JS (Any custom js code you want to apply should be defined here).
 ====================================================================================*/
+
+// Function Get Class in Pathname
 var page = window.location.pathname;
 if (page == "/about") {
   $(".aboutCss").addClass("active");
@@ -16,4 +18,9 @@ if (page == "/about") {
   $(".faqCss").addClass("active");
 } else if (page == "/contact") {
   $(".contactCss").addClass("active");
+}
+
+// Function Newsletter
+function newsLetter() {
+  window.alert("Thank you for Subscibe!");
 }
