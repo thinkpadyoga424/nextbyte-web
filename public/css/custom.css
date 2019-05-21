@@ -232,6 +232,27 @@ blockquote p::after {
   color: #f0f0f0 !important;
 }
 
+.section-title h4 {
+  color: #a4b0be;
+}
+
+.table-activity {
+  border-radius: 7px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 10px 30px 20px 30px;;
+}
+
+.table-activity .table th {
+  padding: 25px 30px;
+  color: #a4b0be;
+}
+
+.table-activity .table td {
+  padding: 20px 30px;
+  color: #a4b0be;
+}
+
 /* ============== Contact Us > Form > Select Style =================== */
 .theme-select-style {
   border: none;

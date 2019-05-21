@@ -34,8 +34,8 @@ app.use("/contact", contactRouter);
 app.use("/faq", contactFaq);
 app.use("/website", websiteRouter);
 app.use("/mobile", mobileRouter);
-app.use("/term", termRouter);
-app.use("/policy", policyRouter);
+app.use("/term-of-use", termRouter);
+app.use("/privacy-policy", policyRouter);
 app.use("/register", registerRouter);
 
 // catch 404 and forward to error handler
