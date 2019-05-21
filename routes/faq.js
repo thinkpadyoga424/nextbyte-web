@@ -12,7 +12,7 @@ router.get("/", function(req, res, next) {
       data.push(response.data.data);
       console.log(data[0][1].type);
       console.log(data[0][1].answer);
-      res.render("faq", { data: data });
+      res.render("faq", { title: "Faq", data: data });
     })
     .catch(error => {
       res.render("error", { error: error });
