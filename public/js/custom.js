@@ -24,3 +24,9 @@ if (page == "/about") {
 function newsLetter() {
   window.alert("Thank you for Subscibe!");
 }
+
+// POST Register to Airtable
+
+
+
+fetch('')
