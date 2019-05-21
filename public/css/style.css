@@ -447,8 +447,8 @@ body {
   font-weight: 600;
 }
 .btn-transparent {
-  border-color: #51dfa2;
-  color: #51dfa2;
+  border-color: #ececec;
+  color: #f3f3f3;
   padding: 10px 30px;
 }
 .btn-icon {
