@@ -19,9 +19,14 @@
           </div>
           <!-- footer mail -->
           <div class="footer-mail parsley-validate">
-            <form action="" method="" class="footer-form" novalidate>
-              <input type="email" placeholder="type your email here" required />
-              <button onclick="newsLetter()">
+            <form id="footer-form-email" class="footer-form" novalidate>
+              <input
+                id="footer-email"
+                type="email"
+                placeholder="type your email here"
+                required
+              />
+              <button type="submit">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
               </button>
             </form>
