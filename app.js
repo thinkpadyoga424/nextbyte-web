@@ -34,7 +34,7 @@ app.use("/contact", contactRouter);
 app.use("/faq", contactFaq);
 app.use("/website", websiteRouter);
 app.use("/mobile", mobileRouter);
-app.use("/term-of-use", termRouter);
+app.use("/term-and-conditions", termRouter);
 app.use("/privacy-policy", policyRouter);
 app.use("/register", registerRouter);
 
