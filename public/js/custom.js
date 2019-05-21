@@ -26,7 +26,3 @@ function newsLetter() {
 }
 
 // POST Register to Airtable
-
-
-
-fetch('')
