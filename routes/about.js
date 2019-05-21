@@ -16,7 +16,7 @@ router.get("/", function(req, res, next) {
         return a.index - b.index;
       });
       console.log(data);
-      res.render("about", { data: data });
+      res.render("about", { title: "About Us", data: data });
     })
     .catch(error => {
       res.render("error", { error: error });
