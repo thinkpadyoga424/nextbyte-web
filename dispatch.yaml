@@ -1,0 +1,3 @@
+dispatch:
+  - url: "nextbyte.co/*"
+    service: default
