@@ -1,5 +1,5 @@
 <!-- start zigzag area type2 -->
-<section data-animate="fadeInUp" data-delay="0.7">
+<section data-animate="fadeInUp" data-delay="0.4">
   <div class="zigzag-inner type2 pt-50 pb-50" data-bg-img="img/news.png">
     <div class="container">
       <div class="row">
@@ -20,10 +20,11 @@
               mendapatkan berita dan info tentang teknologi terbaru yang menarik
               dari kami.
             </p>
-            <form action="" method="post" novalidate>
+            <form id="section-newsletter-form" novalidate>
               <!-- form group -->
               <div class="form-group">
                 <input
+                  id="section-newsletter-email"
                   type="email"
                   name="email"
                   class="syllabus-style-input"
@@ -31,10 +32,18 @@
                   required
                 />
               </div>
+              <button
+                type="submit"
+                class="btn contact-btn btn-transparent style-4"
+              >
+                subscribe
+              </button>
             </form>
-            <a href="#" class="btn btn-transparent style-1 waves-effect"
+            <!-- <a
+              id="newsletter-subscribe"
+              class="btn btn-transparent style-1 waves-effect"
               >Subscribe</a
-            >
+            > -->
           </div>
           <!-- End of zigzag wrap -->
         </div>
