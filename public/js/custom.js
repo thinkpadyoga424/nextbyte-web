@@ -33,11 +33,6 @@ function newsLetter(event) {
     email: email
   };
 
-  const headers = new Headers({
-    "Content-Type": "application/json"
-    // Accept: "application/json"
-  });
-
   const url =
     "https://us-central1-dbnextbyte.cloudfunctions.net/api/v1/newsletter";
 
@@ -60,8 +55,14 @@ function newsLetter(event) {
       return response;
     })
     .then(data => {
-      window.alert("Thank you for Subscibe!");
       console.log(data);
+      Swal.fire({
+        type: "success",
+        title: "Terima Kasih Telah Subscribe",
+        text: email,
+        showConfirmButton: false
+      });
+      document.getElementById("footer-email").value = "";
     })
     .catch(err1 => {
       console.log(err1);
@@ -69,5 +70,3 @@ function newsLetter(event) {
 }
 
 formEmail.addEventListener("submit", newsLetter);
-
-// POST Register to Airtable
