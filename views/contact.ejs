@@ -71,12 +71,13 @@
               <div class="col-md-10">
                 <!-- contact form -->
                 <div class="contact-form contact-page-form parsley-validate">
-                  <form action="" method="post" novalidate>
+                  <form id="contact-form" novalidate>
                     <!-- form group -->
                     <div class="form-group">
                       <input
+                        id="contact-subject"
                         type="text"
-                        name="ubject"
+                        name="subject"
                         class="theme-input-style"
                         placeholder="Subject"
                       />
@@ -85,6 +86,7 @@
                     <!-- form group -->
                     <div class="form-group">
                       <input
+                        id="contact-fullName"
                         type="text"
                         name="name"
                         class="theme-input-style"
@@ -97,6 +99,7 @@
                     <!-- form group -->
                     <div class="form-group">
                       <input
+                        id="contact-email"
                         type="email"
                         name="email"
                         class="theme-input-style"
@@ -109,6 +112,7 @@
                     <!-- form group -->
                     <div class="form-group">
                       <textarea
+                        id="contact-message"
                         name="message"
                         placeholder="Tuliskan pesan kamu"
                         class="theme-input-style"
@@ -252,6 +256,7 @@
       </div>
     </section>
     <!-- End of visite us -->
+    <script src="js/contact.js"></script>
 
     <% include ./partials/footer %> <% include ./partials/script %>
   </body>
