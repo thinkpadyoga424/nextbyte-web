@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Document Title -->
+    <title>Nextbyte - <%= title %></title>
+
     <meta
       name="description"
       content="Nextbyte terbentuk oleh kepercayaan bahwa semua orang bisa belajar programming. Tujuan kami adalah kesuksesan dan masa depan murid."
@@ -13,7 +16,7 @@
     <!-- Preloader -->
     <div class="preLoader">
       <div class="preload-img">
-        <img src="img/favicon.png" alt="" class="pre-img" />
+        <img src="img/favicon.png" alt="favicon" class="pre-img" />
       </div>
     </div>
     <!-- End Of Preloader -->
@@ -107,7 +110,7 @@
           <div class="col-md-5">
             <!-- company goal image -->
             <div class="company-goal-img">
-              <img src="img/about-next.png" alt="You never" data-rjs="2" />
+              <img src="img/about-next.png" alt="Company Goal" data-rjs="2" />
             </div>
             <!-- End of company goal image -->
           </div>
@@ -187,7 +190,10 @@
           <div class="mt-4 col-xl-4 col-lg-6 col-sm-12 team-wrap">
             <div class="team-member text-center">
               <div class="team-img">
-                <img src="<%= data[0][i].avatar %>" alt="" />
+                <img
+                  src="<%= data[0][i].avatar %>"
+                  alt="<%= data[0][i].name %>"
+                />
                 <div class="overlay">
                   <div class="team-details">
                     <text>

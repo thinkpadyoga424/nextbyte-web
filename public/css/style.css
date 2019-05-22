@@ -447,8 +447,8 @@ body {
   font-weight: 600;
 }
 .btn-transparent {
-  border-color: #51dfa2;
-  color: #51dfa2;
+  border-color: #ececec;
+  color: #f3f3f3;
   padding: 10px 30px;
 }
 .btn-icon {
@@ -2810,7 +2810,7 @@ label input[type="radio"] {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 205px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 .overlay6 {
@@ -2849,6 +2849,7 @@ label input[type="radio"] {
 .home-banner6 .banner--inner-text p {
   color: #fff;
   margin-bottom: 36px;
+  font-size: 20px;
 }
 .home-banner6 .banner--inner-text a + a {
   margin-left: 20px;

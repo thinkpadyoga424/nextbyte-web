@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Document Title -->
+    <title>Nextbyte - <%= title %></title>
     <meta
       name="description"
       content="Mobile Development adalah full training program selama 10 minggu dimana kamu akan di bimbing oleh mentor kami yang tentunya sudah ahli di bidangnya. Mulai dari hal yang fundamental sampai kamu bisa membuat aplikasi kamu sendiri."
@@ -13,7 +15,7 @@
     <!-- Preloader -->
     <div class="preLoader">
       <div class="preload-img">
-        <img src="img/favicon.png" alt="" class="pre-img" />
+        <img src="img/favicon.png" alt="favicon" class="pre-img" />
       </div>
     </div>
     <!-- End Of Preloader -->
@@ -108,6 +110,12 @@
     <% include ./partials/cicilan %>
 
     <!-- End of Card Ciclan -->
+
+    <!-- Newsletter -->
+
+    <% include ./sections/newsletter %>
+
+    <!-- End of Newsletter -->
 
     <% include ./partials/footer %> <% include ./partials/script %>
   </body>
