@@ -896,3 +896,33 @@ table.invoices-table tr th:nth-child(1) {
 .pt-30 {
   padding-top: 30px;
 }
+
+/* BUTTON DAFTAR */
+
+.reglink-title {
+  color: #40b281;
+  font-family: Tahoma, sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+.reglink-text {
+  color: #308561;
+  font-family: Tahoma, sans-serif;
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 40px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.reglink-text:hover {
+  color: #caf5e3;
+  background: #308561;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
+/* END BUTTON DAFTAR */
+

@@ -6756,7 +6756,7 @@ img.line-chart {
   padding-left: 40px;
 }
 
-.zigzag-inner h2 {
+.zigzag-inner h1 {
   color: #fff;
   font-weight: 700;
   margin-bottom: 14px;
@@ -6777,7 +6777,7 @@ img.line-chart {
   opacity: 0.9;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
   width: 5000%;
-  height: 120%;
+  height: 100%;
   top: 0;
   right: -46.7%;
   -webkit-transform: skew(-16.5deg);
