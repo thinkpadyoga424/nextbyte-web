@@ -406,6 +406,11 @@ body {
   position: relative;
 }
 
+.home6-section-bg-2 {
+  background: #fcfcfc;
+  position: relative;
+}
+
 .home6-team-bg {
   background: #fff;
   position: relative;
@@ -6339,10 +6344,10 @@ img.line-chart {
   color: #dbdfff;
 }
 .single--pricing-plan.active .btn-fill:before {
-  background: transparent;
+  background: #51dfa2;
 }
 .single--pricing-plan.active .btn-fill {
-  background: transparent;
+  background: #51dfa2;
 }
 .single--pricing-plan.active .pricing-plan-body p {
   color: #fff;
@@ -6433,7 +6438,7 @@ img.line-chart {
   left: 0;
 }
 .single--pricing-plan .btn.btn-fill {
-  border-color: #fff;
+  border-color: #51dfa2;
 }
 .single--pricing-plan .btn.btn-fill:before {
   background: #002197;
@@ -6442,7 +6447,7 @@ img.line-chart {
   color: #002197;
 }
 .single--pricing-plan .btn.btn-fill:hover:before {
-  background: #fff;
+  background: #51dfa2;
 }
 /*34.01: pricing plan type 2*/
 .type2 .single--pricing-plan.active {
@@ -6459,10 +6464,10 @@ img.line-chart {
   padding-bottom: 10px;
 }
 .type2 .single--pricing-plan.active .pricing-plan-body p {
-  color: #fff;
+  color: #51dfa2;
 }
 .type2 .single--pricing-plan.active .pricing-plan-body ul li {
-  color: #fff;
+  color: #51dfa2;
 }
 .type2 .single--pricing-plan.activeline span:last-child {
   position: absolute;
@@ -6496,16 +6501,16 @@ img.line-chart {
   display: block;
 }
 .type2 .single--pricing-plan .btn.btn-fill {
-  border-color: #fff;
+  border-color: #51dfa2;
 }
 .type2 .single--pricing-plan .btn.btn-fill:before {
   background: #51dfa2;
 }
 .type2 .single--pricing-plan .btn.btn-fill:hover {
-  color: #51dfa2;
+  color: #404744;
 }
 .type2 .single--pricing-plan .btn.btn-fill:hover:before {
-  background: #fff;
+  background: #51dfa2;
 }
 /*==============================================
     35: Testimonial carousel and partner carousel
