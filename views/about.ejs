@@ -40,8 +40,10 @@
               >
                 <h1 class="about-page-banner">Tentang Bootcamp Kami</h1>
                 <ul class="nav m-0 justify-content-center">
-                  <li><a class="about-a" href="/">Home</a></li>
-                  <li><a class="about-a" href="#">About Us</a></li>
+                  <li><a class="about-a" href="/" title="Home">Home</a></li>
+                  <li>
+                    <a class="about-a" href="#" title="About Us">About Us</a>
+                  </li>
                 </ul>
               </div>
               <!-- End of page title inner -->
@@ -81,9 +83,6 @@
                 lebih fokus dan passionate dalam menjalani peran mereka
                 masing-masing di industri digital.
               </p>
-              <!-- <a href="#" class="btn btn-transparent waves-effect style-4"
-                >Get Started</a
-              > -->
             </div>
             <!-- End of about our company -->
           </div>
@@ -160,9 +159,6 @@
                     </p>
                   </li>
                 </ul>
-                <!-- <a href="#" class="btn btn-transparent waves-effect style-4"
-                  >Get Started</a
-                > -->
               </div>
             </div>
             <!-- End of company goal text -->
@@ -200,10 +196,18 @@
                       <%= data[0][i].content %>
                     </text>
                     <div class="socials">
-                      <a href="#"><i class="fab fa-facebook"></i></a>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                      <a href="#"><i class="fab fa-linkedin"></i></a>
-                      <a href="#"><i class="fa fa-envelope"></i></a>
+                      <a href="#" title="Facebook <%= data[0][i].name %>"
+                        ><i class="fab fa-facebook"></i
+                      ></a>
+                      <a href="#" title="Twitter <%= data[0][i].name %>"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                      <a href="#" title="LinkedIn <%= data[0][i].name %>"
+                        ><i class="fab fa-linkedin"></i
+                      ></a>
+                      <a href="#" title="Email <%= data[0][i].name %>"
+                        ><i class="fa fa-envelope"></i
+                      ></a>
                     </div>
                   </div>
                 </div>
