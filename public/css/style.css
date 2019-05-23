@@ -6464,10 +6464,10 @@ img.line-chart {
   padding-bottom: 10px;
 }
 .type2 .single--pricing-plan.active .pricing-plan-body p {
-  color: #51dfa2;
+  color: #fff;
 }
 .type2 .single--pricing-plan.active .pricing-plan-body ul li {
-  color: #51dfa2;
+  color: #fff;
 }
 .type2 .single--pricing-plan.activeline span:last-child {
   position: absolute;
