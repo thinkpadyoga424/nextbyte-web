@@ -104,56 +104,120 @@
     <% include ./partials/agenda %>
     <!-- End of Activity -->
 
-     <!-- Priceing  -->
-     <section id="programs" class="home6-section-bg-2 pt-80 pb-60">
-      <div class="container" data-animate="fadeInUp">
+    <!-- pricecing plan type 2 -->
+    <section id="programs" class="vpn-patern pt-80 pb-60">
+      <div class="pricing-plan type2">
+        <h2 class="about-page-title text-center pb-30">Biaya Program</h2>
         <div class="row justify-content-center">
-          <div class="col-xl-12 col-lg-8">
-            <!-- section title -->
-            <div class="text-center mb-30">
-              <h1 style="color: #51dfa2;">Biaya Program</h1>
-            </div>
-            <!-- End of section title -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-6 text-center">
-            <div class="style-four">
-              <del>
-                <span class="amount">Rp15,000,000<sup>.00</sup></span>
-              </del>
-              <ins>
-                <span class="amount">Rp9,000,000<sup>.00</sup></span>
-              </ins>
-              <hr>
-              <div>
-                <p>Biaya tersebut sudah mencakup administrasi dan seluruh operasional selama proses bootcamp berlangsung</p>
+          <div class="col-md-3">
+            <!-- single pricing plan -->
+            <div class="single--pricing-plan active waves-effect">
+              <!--plan top -->
+              <div class="pricing-plan-top">
+                <div class="plan-top-head">
+                  <h4>Mobile Development</h4>
+                  <div class="underline-wrap">
+                    <div class="unerline theme-color">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- plan top head text -->
+                <div class="plantop-head-text">
+                  <h3 class="h2 price-bootcamp"><span>Rp </span>15,000,000</h3>
+                </div>
+                <div class="plan-top-head">
+                  <h4>Now Only</h4>
+                  <div class="underline-wrap">
+                    <div class="unerline theme-color">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="plantop-head-text">
+                  <h3 class="h2"><span>Rp </span>&nbsp;9,000,000</h3>
+                </div>
+                <!--End of plan top head text -->
               </div>
+              <p class="sdkb">*Syarat dan ketentuan berlaku.</p>
+              <!--End of plan top -->
             </div>
+            <!-- End of single pricing plan -->
           </div>
         </div>
-        
       </div>
     </section>
-
-    <!-- End of Pricing -->
-
+    <!-- end of pricecing plan type 2 -->
 
     <!-- Card Cicilan -->
-
     <% include ./partials/cicilan %>
-
     <!-- End of Card Ciclan -->
 
-    <% include ./partials/registerlink %>
-    
+    <!-- Register -->
+    <section id="programs" class="vpn-patern pt-80 pb-60">
+      <div class="pricing-plan type2">
+        <h2 class="about-page-title text-center pb-30">Jadwal Program</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <!-- single pricing plan -->
+            <div class="single--pricing-plan active waves-effect">
+              <!--plan top -->
+              <div class="pricing-plan-top">
+                <div class="plan-top-head">
+                  <h4>Mobile Development < Batch 1 /></h4>
+                  <div class="underline-wrap">
+                    <div class="unerline theme-color">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- plan top head text -->
+                <div class="plantop-head-text justify-content-center">
+                  <h3>1 Juli 2019 - < 6 Weeks /></h3>
+                </div>
+                <hr
+                  style="height:3px; border:none; color:#fff; background-color: #fff;"
+                />
+                <div class="plantop-head-text text-center row">
+                  <div class="col-md-6">
+                    <h4>Mon - Fri</h4>
+                  </div>
+                  <div class="col-md-6">
+                    <h4>09:00 - 16:00</h4>
+                  </div>
+                </div>
+                <hr
+                  style="height:3px; border:none; color:#fff; background-color: #fff;"
+                />
+                <div class="text-center">
+                  <a
+                    href="/register"
+                    class="btn btn-fill mt-5"
+                    style="border: 1px solid white"
+                    >Daftar Sekarang</a
+                  >
+                </div>
+
+                <!--End of plan top head text -->
+              </div>
+              <!--End of plan top -->
+            </div>
+            <!-- End of single pricing plan -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Register -->
+
     <!-- Newsletter -->
-
     <% include ./sections/newsletter %>
-
     <!-- End of Newsletter -->
-
 
     <% include ./partials/footer %> <% include ./partials/script %>
   </body>
