@@ -928,19 +928,17 @@ table.invoices-table tr th:nth-child(1) {
 
 /* Price */
 
-.style-four {
+/* .style-four {
   margin: 1em;
   padding: 1em;
   flex-basis: 500px;
-  /* border: 1px dotted #ccc; */
   display: inline-block;
   color: #484848;
 
   border-radius: 7px;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
   background: #fff;
-  /* padding: 10px 30px 20px 30px; */
-}
+} */
 
 .style-four del {
   color: rgba(169, 169, 169, 0.5);
@@ -976,6 +974,19 @@ table.invoices-table tr th:nth-child(1) {
   font-weight: 500;
   text-decoration: none;
   padding: 1em 1em 1em .5em;
+}
+
+.style-zero {
+  margin: 1em;
+  padding: 1em;
+  /* flex-basis: 500px; */
+  /* border: 1px dotted #ccc; */
+  display: inline-block;
+  color: #484848;
+
+  border-radius: 7px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  background: #fff;
 }
 
 /* End Price */
