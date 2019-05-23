@@ -20,6 +20,14 @@ var app = express();
 
 app.use(cors());
 
+// Robot.txt
+app.use("/robots.txt", function(req, res, next) {
+  res.type("text/plain");
+  res.send(
+    "User-agent: *\nDisallow: /users\nDisallow: /team\n\n\nSitemap: https://nextbyte.co/sitemap.xml"
+  );
+});
+
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
