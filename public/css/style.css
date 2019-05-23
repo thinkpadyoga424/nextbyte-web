@@ -6344,10 +6344,10 @@ img.line-chart {
   color: #dbdfff;
 }
 .single--pricing-plan.active .btn-fill:before {
-  background: #51dfa2;
+  background: transparent;
 }
 .single--pricing-plan.active .btn-fill {
-  background: #51dfa2;
+  background: transparent;
 }
 .single--pricing-plan.active .pricing-plan-body p {
   color: #fff;
@@ -6501,16 +6501,16 @@ img.line-chart {
   display: block;
 }
 .type2 .single--pricing-plan .btn.btn-fill {
-  border-color: #51dfa2;
+  border-color: #fff;
 }
 .type2 .single--pricing-plan .btn.btn-fill:before {
   background: #51dfa2;
 }
 .type2 .single--pricing-plan .btn.btn-fill:hover {
-  color: #404744;
+  color: #51dfa2;
 }
 .type2 .single--pricing-plan .btn.btn-fill:hover:before {
-  background: #51dfa2;
+  background: #fff;
 }
 /*==============================================
     35: Testimonial carousel and partner carousel
@@ -7516,6 +7516,7 @@ img.line-chart {
 }
 .contact-btn {
   margin-top: 24px;
+  padding: 10px;
 }
 .contact-form-info h2 {
   margin-bottom: 41px;
@@ -8750,7 +8751,7 @@ h1 span {
 .back-to-top a {
   width: 35px;
   height: 35px;
-  background: #53e1ff;
+  background: #51dfa2;
   box-shadow: 1px 5px 19px rgba(0, 0, 0, 0.15);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;

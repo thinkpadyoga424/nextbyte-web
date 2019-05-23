@@ -36,8 +36,8 @@
   left: 0;
   top: 50%;
   right: 0;
-  border-top: 1.5px solid;
-  border-color: #3b3e79;
+  border-top: 3px solid;
+  border-color: #fff;
 
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);

@@ -4,6 +4,7 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var cors = require("cors");
+const sm = require('sitemap')
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
@@ -48,6 +49,32 @@ app.use("/mobile", mobileRouter);
 app.use("/term-and-conditions", termRouter);
 app.use("/privacy-policy", policyRouter);
 app.use("/register", registerRouter);
+
+const sitemap = sm.createSitemap({
+  hostname: 'https://nextbyte.co',
+  cacheTime: 600000,
+  urls: [
+    { url: '/', priority: 1.00, lastmodrealtime: true },
+    { url: '/about', priority: 0.80, lastmodrealtime: true },
+    { url: '/website', priority: 0.80, lastmodrealtime: true },
+    { url: '/mobile', priority: 0.80, lastmodrealtime: true },
+    { url: '/contact', priority: 0.80, lastmodrealtime: true },
+    { url: '/privacy-policy', priority: 0.80, lastmodrealtime: true },
+    { url: '/faq', priority: 0.80, lastmodrealtime: true },
+    { url: '/term-and-conditions', priority: 0.80, lastmodrealtime: true },
+    { url: '/register', priority: 0.64, lastmodrealtime: true }
+  ]
+})
+
+app.get('/sitemap.xml', function(req, res) {
+  sitemap.toXML( function (err, xml) {
+      if (err) {
+        return res.status(500).end();
+      }
+      res.header('Content-Type', 'application/xml');
+      res.send( xml );
+  });
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
