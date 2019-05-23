@@ -54,15 +54,15 @@ const sitemap = sm.createSitemap({
   hostname: 'https://nextbyte.co',
   cacheTime: 600000,
   urls: [
-    { url: '/', priority: 1.00, lastmodrealtime: true },
-    { url: '/about', priority: 0.80, lastmodrealtime: true },
-    { url: '/website', priority: 0.80, lastmodrealtime: true },
-    { url: '/mobile', priority: 0.80, lastmodrealtime: true },
-    { url: '/contact', priority: 0.80, lastmodrealtime: true },
-    { url: '/privacy-policy', priority: 0.80, lastmodrealtime: true },
-    { url: '/faq', priority: 0.80, lastmodrealtime: true },
-    { url: '/term-and-conditions', priority: 0.80, lastmodrealtime: true },
-    { url: '/register', priority: 0.64, lastmodrealtime: true }
+    { url: '/', priority: 1.00, lastmodISO: '2019-05-22T13:53:13+00:00' },
+    { url: '/about', priority: 0.80, lastmodISO: '2019-05-22T13:53:13+00:00' },
+    { url: '/website', priority: 0.80, lastmodISO: '2019-05-22T13:53:13+00:00' },
+    { url: '/mobile', priority: 0.80, lastmodISO: '2019-05-22T13:53:13+00:00' },
+    { url: '/contact', priority: 0.80, lastmodISO: '2019-05-22T13:53:13+00:00' },
+    { url: '/privacy-policy', priority: 0.80, lastmodISO: '2019-05-22T13:53:13+00:00' },
+    { url: '/faq', priority: 0.80, lastmodISO: '2019-05-22T13:53:13+00:00' },
+    { url: '/term-and-conditions', priority: 0.80, lastmodISO: '2019-05-22T13:53:13+00:00' },
+    { url: '/register', priority: 0.64, lastmodISO: '2019-05-22T13:53:13+00:00' }
   ]
 })
 
