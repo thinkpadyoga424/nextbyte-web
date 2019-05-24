@@ -999,7 +999,6 @@ table.invoices-table tr th:nth-child(1) {
 }
 /* End of Date programs */
 
-<<<<<<< HEAD
 /* Error Page */
 
 .error-page {
@@ -1205,7 +1204,6 @@ table.invoices-table tr th:nth-child(1) {
 }
 
 /* End OfError Page */
-=======
 /*--------------------------- Button Class Style ---------------------------*/
 
 .button-jadwal {
@@ -1223,4 +1221,3 @@ table.invoices-table tr th:nth-child(1) {
   border: solid 1.5pt #ffffff !important;
   letter-spacing: 1pt;
 }
->>>>>>> 5ec84c31d947f5145dde91c603c853a9e852366c
