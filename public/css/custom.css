@@ -154,6 +154,12 @@ blockquote p::after {
   transition: all 0.2s ease-in-out;
 }
 
+@media only screen and (max-width: 479px) {
+  .team-details {
+    font-size: 12px;
+  }
+}
+
 .team-details p {
   color: #fff;
 }
@@ -993,6 +999,7 @@ table.invoices-table tr th:nth-child(1) {
 }
 /* End of Date programs */
 
+<<<<<<< HEAD
 /* Error Page */
 
 .error-page {
@@ -1198,3 +1205,22 @@ table.invoices-table tr th:nth-child(1) {
 }
 
 /* End OfError Page */
+=======
+/*--------------------------- Button Class Style ---------------------------*/
+
+.button-jadwal {
+  background: #ffffff;
+  padding: 15px 30px;
+  color: #51dfa2;
+  border-radius: 2pt;
+  text-transform: capitalize;
+}
+
+.button-jadwal:hover {
+  background: #51dfa2;
+  color: #ffffff !important;
+  font-weight: bold;
+  border: solid 1.5pt #ffffff !important;
+  letter-spacing: 1pt;
+}
+>>>>>>> 5ec84c31d947f5145dde91c603c853a9e852366c
