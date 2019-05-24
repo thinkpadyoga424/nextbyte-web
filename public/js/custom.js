@@ -14,6 +14,9 @@ if (page == "/about") {
 } else if (page == "/website") {
   $(".programsCss").addClass("active");
   $(".websiteCss").addClass("active");
+}else if (page == "/backend") {
+  $(".programsCss").addClass("active");
+  $(".backendCss").addClass("active");
 } else if (page == "/faq") {
   $(".faqCss").addClass("active");
 } else if (page == "/contact") {

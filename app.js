@@ -1,23 +1,24 @@
-var createError = require("http-errors");
-var express = require("express");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
-var cors = require("cors");
+const createError = require("http-errors");
+const express = require("express");
+const path = require("path");
+const cookieParser = require("cookie-parser");
+const logger = require("morgan");
+const cors = require("cors");
 const sm = require('sitemap')
 
-var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
-var aboutRouter = require("./routes/about");
-var contactRouter = require("./routes/contact");
-var contactFaq = require("./routes/faq");
-var websiteRouter = require("./routes/website");
-var mobileRouter = require("./routes/mobile");
-var termRouter = require("./routes/term");
-var policyRouter = require("./routes/policy");
-var registerRouter = require("./routes/register");
+const indexRouter = require("./routes/index");
+const usersRouter = require("./routes/users");
+const aboutRouter = require("./routes/about");
+const contactRouter = require("./routes/contact");
+const contactFaq = require("./routes/faq");
+const websiteRouter = require("./routes/website");
+const mobileRouter = require("./routes/mobile");
+const backendRouter = require('./routes/backend')
+const termRouter = require("./routes/term");
+const policyRouter = require("./routes/policy");
+const registerRouter = require("./routes/register");
 
-var app = express();
+const app = express();
 
 app.use(cors());
 
@@ -46,6 +47,7 @@ app.use("/contact", contactRouter);
 app.use("/faq", contactFaq);
 app.use("/website", websiteRouter);
 app.use("/mobile", mobileRouter);
+app.use("/backend", backendRouter);
 app.use("/term-and-conditions", termRouter);
 app.use("/privacy-policy", policyRouter);
 app.use("/register", registerRouter);
