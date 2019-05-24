@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const createError = require("http-errors");
 const express = require("express");
 const path = require("path");
@@ -5,6 +6,15 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const cors = require("cors");
 const sm = require('sitemap')
+=======
+var createError = require("http-errors");
+var express = require("express");
+var path = require("path");
+var cookieParser = require("cookie-parser");
+var logger = require("morgan");
+var cors = require("cors");
+const sm = require("sitemap");
+>>>>>>> dc2b452db8ae06fd47f404de3400e37fdd1fd874
 
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
@@ -53,35 +63,48 @@ app.use("/privacy-policy", policyRouter);
 app.use("/register", registerRouter);
 
 const sitemap = sm.createSitemap({
-  hostname: 'https://nextbyte.co',
+  hostname: "https://nextbyte.co",
   cacheTime: 600000,
   urls: [
-    { url: '/', priority: 1.00, lastmodISO: '2019-05-22T13:53:13+00:00' },
-    { url: '/about', priority: 0.80, lastmodISO: '2019-05-22T13:53:13+00:00' },
-    { url: '/website', priority: 0.80, lastmodISO: '2019-05-22T13:53:13+00:00' },
-    { url: '/mobile', priority: 0.80, lastmodISO: '2019-05-22T13:53:13+00:00' },
-    { url: '/contact', priority: 0.80, lastmodISO: '2019-05-22T13:53:13+00:00' },
-    { url: '/privacy-policy', priority: 0.80, lastmodISO: '2019-05-22T13:53:13+00:00' },
-    { url: '/faq', priority: 0.80, lastmodISO: '2019-05-22T13:53:13+00:00' },
-    { url: '/term-and-conditions', priority: 0.80, lastmodISO: '2019-05-22T13:53:13+00:00' },
-    { url: '/register', priority: 0.64, lastmodISO: '2019-05-22T13:53:13+00:00' }
+    { url: "/", priority: 1.0, lastmodISO: "2019-05-22T13:53:13+00:00" },
+    { url: "/about", priority: 0.8, lastmodISO: "2019-05-22T13:53:13+00:00" },
+    { url: "/website", priority: 0.8, lastmodISO: "2019-05-22T13:53:13+00:00" },
+    { url: "/mobile", priority: 0.8, lastmodISO: "2019-05-22T13:53:13+00:00" },
+    { url: "/backend", priority: 0.8, lastmodISO: "2019-05-24T13:53:13+00:00" },
+    { url: "/contact", priority: 0.8, lastmodISO: "2019-05-22T13:53:13+00:00" },
+    {
+      url: "/privacy-policy",
+      priority: 0.8,
+      lastmodISO: "2019-05-22T13:53:13+00:00"
+    },
+    { url: "/faq", priority: 0.8, lastmodISO: "2019-05-22T13:53:13+00:00" },
+    {
+      url: "/term-and-conditions",
+      priority: 0.8,
+      lastmodISO: "2019-05-22T13:53:13+00:00"
+    },
+    {
+      url: "/register",
+      priority: 0.64,
+      lastmodISO: "2019-05-22T13:53:13+00:00"
+    }
   ]
-})
+});
 
-app.get('/sitemap.xml', function(req, res) {
-  sitemap.toXML( function (err, xml) {
-      if (err) {
-        return res.status(500).end();
-      }
-      res.header('Content-Type', 'application/xml');
-      res.send( xml );
+app.get("/sitemap.xml", function(req, res) {
+  sitemap.toXML(function(err, xml) {
+    if (err) {
+      return res.status(500).end();
+    }
+    res.header("Content-Type", "application/xml");
+    res.send(xml);
   });
 });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
-  res.status(404).render('error', { url: req.url, status: '404 Not Found' })
+  res.status(404).render("error", { url: req.url, status: "404 Not Found" });
 });
 
 // error handler
