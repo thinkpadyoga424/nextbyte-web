@@ -154,6 +154,12 @@ blockquote p::after {
   transition: all 0.2s ease-in-out;
 }
 
+@media only screen and (max-width: 479px) {
+  .team-details {
+    font-size: 12px;
+  }
+}
+
 .team-details p {
   color: #fff;
 }
