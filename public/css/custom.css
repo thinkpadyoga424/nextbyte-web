@@ -998,3 +998,21 @@ table.invoices-table tr th:nth-child(1) {
   border-right: 1px solid white;
 }
 /* End of Date programs */
+
+/*--------------------------- Button Class Style ---------------------------*/
+
+.button-jadwal {
+  background: #ffffff;
+  padding: 15px 30px;
+  color: #51dfa2;
+  border-radius: 2pt;
+  text-transform: capitalize;
+}
+
+.button-jadwal:hover {
+  background: #51dfa2;
+  color: #ffffff !important;
+  font-weight: bold;
+  border: solid 1.5pt #ffffff !important;
+  letter-spacing: 1pt;
+}
