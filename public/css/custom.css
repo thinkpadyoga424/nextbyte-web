@@ -1029,10 +1029,10 @@ table.invoices-table tr th:nth-child(1) {
 	transition: all 0.5s;
 	position: relative;
 }
-.button13 a{
-	color: #fff;
+.button13 {
+	color: #fff !important;
 	text-decoration: none;
-	display: block;
+  display: block;
 }
 .button13::before{
 	content: '';

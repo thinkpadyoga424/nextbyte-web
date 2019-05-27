@@ -1,23 +1,24 @@
-var createError = require("http-errors");
-var express = require("express");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
-var cors = require("cors");
+const createError = require("http-errors");
+const express = require("express");
+const path = require("path");
+const cookieParser = require("cookie-parser");
+const logger = require("morgan");
+const cors = require("cors");
 const sm = require("sitemap");
 
-var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
-var aboutRouter = require("./routes/about");
-var contactRouter = require("./routes/contact");
-var contactFaq = require("./routes/faq");
-var websiteRouter = require("./routes/website");
-var mobileRouter = require("./routes/mobile");
-var termRouter = require("./routes/term");
-var policyRouter = require("./routes/policy");
-var registerRouter = require("./routes/register");
+const indexRouter = require("./routes/index");
+const usersRouter = require("./routes/users");
+const aboutRouter = require("./routes/about");
+const contactRouter = require("./routes/contact");
+const contactFaq = require("./routes/faq");
+const websiteRouter = require("./routes/website");
+const mobileRouter = require("./routes/mobile");
+const backendRouter = require("./routes/backend");
+const termRouter = require("./routes/term");
+const policyRouter = require("./routes/policy");
+const registerRouter = require("./routes/register");
 
-var app = express();
+const app = express();
 
 app.use(cors());
 
@@ -46,6 +47,7 @@ app.use("/contact", contactRouter);
 app.use("/faq", contactFaq);
 app.use("/website", websiteRouter);
 app.use("/mobile", mobileRouter);
+app.use("/backend", backendRouter);
 app.use("/term-and-conditions", termRouter);
 app.use("/privacy-policy", policyRouter);
 app.use("/register", registerRouter);
@@ -58,6 +60,7 @@ const sitemap = sm.createSitemap({
     { url: "/about", priority: 0.8, lastmodISO: "2019-05-22T13:53:13+00:00" },
     { url: "/website", priority: 0.8, lastmodISO: "2019-05-22T13:53:13+00:00" },
     { url: "/mobile", priority: 0.8, lastmodISO: "2019-05-22T13:53:13+00:00" },
+    { url: "/backend", priority: 0.8, lastmodISO: "2019-05-24T13:53:13+00:00" },
     { url: "/contact", priority: 0.8, lastmodISO: "2019-05-22T13:53:13+00:00" },
     {
       url: "/privacy-policy",
@@ -99,7 +102,7 @@ app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get("env") === "development" ? err : {};
-  
+
   // render the error page
   res.status(err.status || 500);
   res.render("error");
