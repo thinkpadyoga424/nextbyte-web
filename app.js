@@ -94,7 +94,7 @@ app.get("/sitemap.xml", function(req, res) {
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
-  res.status(404).render("error", { url: req.url, status: "404 Not Found" });
+  // res.status(404).render("error", { url: req.url });
 });
 
 // error handler
