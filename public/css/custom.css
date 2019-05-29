@@ -1231,6 +1231,7 @@ table.invoices-table tr th:nth-child(1) {
   color: #51dfa2;
   border-radius: 2pt;
   text-transform: capitalize;
+  transition: 0.4s;
 }
 
 .button-jadwal:hover {
@@ -1239,6 +1240,23 @@ table.invoices-table tr th:nth-child(1) {
   font-weight: bold;
   border: solid 1.5pt #ffffff !important;
   letter-spacing: 1pt;
+}
+
+.button-contact {
+  background: #51dfa2 !important;
+  font-size: 12pt;
+  color: #f3f3f3 !important;
+  border: solid 0.5pt #36c386 !important;
+  padding: 10px 30px;
+  border-radius: 2pt;
+  transition: 0.3s;
+  letter-spacing: 1pt;
+}
+
+.button-contact:hover {
+  background: #2aad75 !important;
+  color: #ffffff !important;
+  font-weight: 500;
 }
 
 /*--------------------------- Width ---------------------------*/

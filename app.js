@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const cors = require("cors");
 const sm = require("sitemap");
+const redirectHttps = require("express-http-to-https").redirectToHTTPS;
 
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
@@ -21,6 +22,8 @@ const registerRouter = require("./routes/register");
 const app = express();
 
 app.use(cors());
+
+app.use(redirectHttps([/localhost:(\d{4})/], [/\/error/], 301));
 
 // Robot.txt
 app.use("/robots.txt", function(req, res, next) {
