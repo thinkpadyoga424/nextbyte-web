@@ -6,7 +6,7 @@
 
 .btn-newsletter {
   background: #fff !important;
-  color: #51DFA2 !important;
+  color: #51dfa2 !important;
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 5px;
@@ -14,7 +14,7 @@
 
 .btn-newsletter:hover {
   color: #fff !important;
-  background: #51DFA2 !important;
+  background: #51dfa2 !important;
   border: 1px solid #fff;
 }
 
@@ -1294,4 +1294,9 @@ table.invoices-table tr th:nth-child(1) {
 
 .form-border-color {
   border-color: #0ec9ec !important;
+}
+
+/*--------------------------- team style ----------------------------*/
+.team-subtitle {
+  color: #535353 !important;
 }
