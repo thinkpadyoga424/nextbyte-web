@@ -5,7 +5,7 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const cors = require("cors");
 const sm = require("sitemap");
-const redirectHttps = require("express-http-to-https").redirectToHTTPS;
+// const redirectHttps = require("express-http-to-https").redirectToHTTPS;
 
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
@@ -23,7 +23,18 @@ const app = express();
 
 app.use(cors());
 
-app.use(redirectHttps([/localhost:(\d{4})/], [/\/error/], 301));
+// app.use(redirectHttps([/localhost:(\d{4})/], [/\/error/], 301));
+app.use(function requireHTTPS(req, res, next) {
+  // The 'x-forwarded-proto' check is for Heroku
+  if (
+    !req.secure &&
+    req.get("x-forwarded-proto") !== "https" &&
+    process.env.NODE_ENV !== "development"
+  ) {
+    return res.redirect("https://" + req.get("host") + req.url);
+  }
+  next();
+});
 
 // Robot.txt
 app.use("/robots.txt", function(req, res, next) {
