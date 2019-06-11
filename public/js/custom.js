@@ -77,7 +77,9 @@ formEmail.addEventListener("submit", newsLetter);
 // ============ Section Newsletter ============ >
 const formNewsletter = document.getElementById("section-newsletter-form");
 
-formNewsletter.addEventListener("submit", newsletterSection);
+if (formNewsletter){
+  formNewsletter.addEventListener("submit", newsletterSection);
+}
 
 function newsletterSection(event) {
   event.preventDefault();
@@ -128,7 +130,10 @@ function newsletterSection(event) {
 // ============ Contact Us ============ >
 
 const formContact = document.getElementById("contact-form");
-formContact.addEventListener("submit", contactUs);
+
+if (formContact){
+  formContact.addEventListener("submit", contactUs);
+}
 
 function contactUs(event) {
   event.preventDefault();

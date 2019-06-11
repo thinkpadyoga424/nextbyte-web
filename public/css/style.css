@@ -2447,7 +2447,7 @@ label input[type="radio"] {
   width: 100%;
   top: 0;
   left: 0;
-  background: url(../img/Crypto_Pattern20.png);
+  /* background: url(../img/Crypto_Pattern20.png); */
 }
 .home-banner2 .banner--inner-text {
   margin-top: 107px;
@@ -8617,7 +8617,7 @@ h1 span {
 }
 /*49.01: pettrns*/
 .crypto-patern {
-  background-image: url(../img/Crypto_Pattern20.png);
+  /* background-image: url(../img/Crypto_Pattern20.png); */
   background-repeat: repeat;
   background-position: top center;
 }
