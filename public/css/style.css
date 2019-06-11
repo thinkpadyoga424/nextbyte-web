@@ -5143,7 +5143,7 @@ img.line-chart {
 /*24.01: use crypdrone token*/
 
 .use-crypdrone-token p {
-  margin-bottom: 66px;
+  /* margin-bottom: 66px; */
 }
 
 .use-crypdrone-token .use-crypdrone-details h4 {
@@ -5157,7 +5157,7 @@ img.line-chart {
 }
 
 .use-crypdrone-token .use-crypdrone-details p {
-  margin-bottom: 46px;
+  margin-bottom: 26px;
 }
 
 /*24.02: use crypdrone token image*/
