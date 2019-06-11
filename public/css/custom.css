@@ -1247,10 +1247,9 @@ table.invoices-table tr th:nth-child(1) {
   font-size: 12pt;
   color: #f3f3f3 !important;
   border: solid 0.5pt #36c386 !important;
-  padding: 10px 30px;
+  padding: 10px 30px 10px 30px;
   border-radius: 2pt;
   transition: 0.3s;
-  letter-spacing: 1pt;
 }
 
 .button-contact:hover {
@@ -1265,4 +1264,20 @@ table.invoices-table tr th:nth-child(1) {
   justify-content: center !important;
   align-items: center !important;
   color: #44e3ff !important;
+}
+
+/*--------------------------- comming soon ----------------------------*/
+.comming-soon {
+  color: #2a5d56 !important;
+}
+
+.comming-soon-border {
+  border: #42424244 0.4pt solid;
+  border-radius: 15pt;
+  padding: 25px 50px 15px 50px;
+  box-shadow: 2px 4px 12px 1px rgba(0, 0, 0, 0.36);
+}
+
+.form-border-color {
+  border-color: #0ec9ec !important;
 }

@@ -198,7 +198,11 @@
 
     <!-- pricecing plan type 2 -->
     <section id="programs" class="vpn-patern pt-80 pb-60">
-      <div data-animate="fadeInUp" data-delay="0.5" class="container pricing-plan type2">
+      <div
+        data-animate="fadeInUp"
+        data-delay="0.5"
+        class="container pricing-plan type2"
+      >
         <h2 class="about-page-title text-center pb-30">Biaya Program</h2>
         <div class="row justify-content-center">
           <div class="col-md-6">
@@ -249,62 +253,46 @@
     <% include ./partials/cicilan %>
     <!-- End of Card Ciclan -->
 
-    <!-- Register  -->
+    <!-- Register -->
     <section id="programs" class="vpn-patern pt-80 pb-60">
-      <div data-animate="fadeInUp" data-delay="0.5" class="container pricing-plan type2">
+      <div
+        data-animate="fadeInUp"
+        data-delay="1.5"
+        class="container pricing-plan type2"
+      >
         <h2 class="about-page-title text-center pb-30">Jadwal Program</h2>
         <div class="row justify-content-center">
-          <div class="col-md-3"></div>
-          <div class="col-md-6">
-            <!-- single pricing plan -->
-            <div class="single--pricing-plan active waves-effect">
-              <!--plan top -->
-              <div class="pricing-plan-top">
-                <div class="plan-top-head">
-                  <h4>Website Development < Batch 1 /></h4>
-                  <div class="underline-wrap">
-                    <div class="unerline theme-color">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
+          <div class="col-md-8">
+            <div class="comming-soon-border">
+              <!-- error text -->
+              <h4 class="comming-soon">Comming Soon</h4>
+              <h1 class="comming-soon">Program ini masih belum dibuka...</h1>
+              <p class="comming-soon">
+                Kita akan segera menghubungi kamu apabila program ini telah
+                dibuka, silahkan masukan emailkamu di form.
+              </p>
+              <div class="contact-form contact-page-form">
+                <form id="contact-form" novalidate>
+                  <!-- form group -->
+                  <div class="form-group">
+                    <input
+                      id="contact-subject"
+                      type="text"
+                      name="email"
+                      class="theme-input-style form-border-color"
+                      placeholder="Email"
+                    />
                   </div>
-                </div>
-                <!-- plan top head text -->
-                <div class="plantop-head-text justify-content-center">
-                  <h3>8 Juli 2019 - < 10 Weeks /></h3>
-                </div>
-                <hr
-                  style="height:3px; border:none; color:#fff; background-color: #fff;"
-                />
-                <div class="plantop-head-text text-center row">
-                  <div class="col-md-6">
-                    <h4>Mon - Fri</h4>
+                  <div>
+                    <button type="submit" class="button-contact">
+                      Kirim
+                    </button>
                   </div>
-                  <div class="col-md-6">
-                    <h4>09:00 - 16:00</h4>
-                  </div>
-                </div>
-                <hr
-                  style="height:3px; border:none; color:#fff; background-color: #fff;"
-                />
-                <div class="text-center pt-30">
-                  <a
-                    title="Daftar Sekarang"
-                    href="/register"
-                    class="button-jadwal"
-                    style="border: 1px solid white"
-                    >Daftar Sekarang</a
-                  >
-                </div>
-
-                <!--End of plan top head text -->
+                </form>
               </div>
-              <!--End of plan top -->
             </div>
-            <!-- End of single pricing plan -->
+            <!-- End of error text -->
           </div>
-          <div class="col-md-3"></div>
         </div>
       </div>
     </section>
