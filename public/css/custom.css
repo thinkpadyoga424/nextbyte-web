@@ -1300,3 +1300,13 @@ table.invoices-table tr th:nth-child(1) {
 .team-subtitle {
   color: #535353 !important;
 }
+
+/*--------------------------- after bootcamp style ----------------------------*/
+
+.after-title {
+  color: #494949;
+}
+
+.after-subtitle {
+  color: #727070;
+}
