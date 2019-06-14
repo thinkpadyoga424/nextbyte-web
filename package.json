@@ -15,6 +15,7 @@
     "express": "~4.16.0",
     "express-http-to-https": "^1.1.4",
     "http-errors": "~1.6.2",
+    "memory-cache": "^0.2.0",
     "morgan": "~1.9.0",
     "sitemap": "^2.2.0"
   }
