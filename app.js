@@ -83,7 +83,7 @@ app.use("/mobile", mobileRouter);
 app.use("/backend", backendRouter);
 app.use("/term-and-conditions", termRouter);
 app.use("/privacy-policy", policyRouter);
-app.use("/register", cache(5), registerRouter);
+app.use("/register", cache(60), registerRouter);
 
 const sitemap = sm.createSitemap({
   hostname: "https://nextbyte.co",
