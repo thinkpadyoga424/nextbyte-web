@@ -19,6 +19,8 @@ const backendRouter = require("./routes/backend");
 const termRouter = require("./routes/term");
 const policyRouter = require("./routes/policy");
 const registerRouter = require("./routes/register");
+const scholarshipRouter = require("./routes/scholarship");
+const scholarshipRegisterRouter = require("./routes/register-scholarship");
 
 const app = express();
 
@@ -84,6 +86,8 @@ app.use("/backend", backendRouter);
 app.use("/term-and-conditions", termRouter);
 app.use("/privacy-policy", policyRouter);
 app.use("/register", cache(60), registerRouter);
+app.use("/scholarship", scholarshipRouter);
+app.use("/scholarship-register", scholarshipRegisterRouter);
 
 const sitemap = sm.createSitemap({
   hostname: "https://nextbyte.co",

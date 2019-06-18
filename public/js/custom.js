@@ -21,6 +21,8 @@ if (page == "/about") {
   $(".faqCss").addClass("active");
 } else if (page == "/contact") {
   $(".contactCss").addClass("active");
+} else if (page == "/scholarship") {
+  $(".scholarCss").addClass("active");
 }
 
 // ============ Function Newsletter ============ >
