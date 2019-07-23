@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const cors = require("cors");
 const sm = require("sitemap");
+const mcache = require("memory-cache");
 // const redirectHttps = require("express-http-to-https").redirectToHTTPS;
 
 const indexRouter = require("./routes/index");
@@ -19,6 +20,8 @@ const termRouter = require("./routes/term");
 const policyRouter = require("./routes/policy");
 const registerRouter = require("./routes/register");
 const partnerRouter = require("./routes/partner");
+const scholarshipRouter = require("./routes/scholarship");
+const scholarshipRegisterRouter = require("./routes/register-scholarship");
 
 const app = express();
 
@@ -55,6 +58,24 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+const cache = duration => {
+  return (req, res, next) => {
+    let key = "__express__" + req.originalUrl || req.url;
+    let cachedBody = mcache.get(key);
+    if (cachedBody) {
+      res.send(cachedBody);
+      return;
+    } else {
+      res.sendResponse = res.send;
+      res.send = body => {
+        mcache.put(key, body, duration * 1000);
+        res.sendResponse(body);
+      };
+      next();
+    }
+  };
+};
+
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/about", aboutRouter);
@@ -65,8 +86,10 @@ app.use("/mobile", mobileRouter);
 app.use("/backend", backendRouter);
 app.use("/term-and-conditions", termRouter);
 app.use("/privacy-policy", policyRouter);
-app.use("/register", registerRouter);
 app.use("/partnership", partnerRouter);
+app.use("/register", cache(60), registerRouter);
+app.use("/scholarship", scholarshipRouter);
+app.use("/scholarship-register", scholarshipRegisterRouter);
 
 const sitemap = sm.createSitemap({
   hostname: "https://nextbyte.co",

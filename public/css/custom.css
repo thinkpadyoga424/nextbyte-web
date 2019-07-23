@@ -1278,6 +1278,7 @@ table.invoices-table tr th:nth-child(1) {
   justify-content: center !important;
   align-items: center !important;
   color: #44e3ff !important;
+  flex-direction: column;
 }
 
 /*--------------------------- comming soon ----------------------------*/
@@ -1309,4 +1310,35 @@ table.invoices-table tr th:nth-child(1) {
 
 .after-subtitle {
   color: #9b9b9b;
+}
+
+/*--------------------------- scholarship bootcamp style ----------------------------*/
+
+.scholarship-title {
+  color: #40a798 !important;
+  font-weight: bold !important;
+}
+
+.button-scholarship {
+  background: #44db9a;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12pt;
+  border: solid 0.5pt #36c386 !important;
+  padding: 10px 30px 10px 30px;
+  border-radius: 2pt;
+  transition: 0.3s;
+}
+
+.button-scholarship:hover {
+  background: #2fb97d;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12pt;
+}
+
+.scholarship-list {
+  padding-top: 0;
+  color: #6d6d6d !important;
+  font-weight: bold !important;
 }
