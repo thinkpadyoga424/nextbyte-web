@@ -17,8 +17,8 @@ if (page == "/about") {
 } else if (page == "/backend") {
   $(".programsCss").addClass("active");
   $(".backendCss").addClass("active");
-} else if (page == "/faq") {
-  $(".faqCss").addClass("active");
+} else if (page == "/partnership") {
+  $(".partnershipCss").addClass("active");
 } else if (page == "/contact") {
   $(".contactCss").addClass("active");
 } else if (page == "/scholarship") {
