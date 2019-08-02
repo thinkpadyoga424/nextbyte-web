@@ -19,6 +19,7 @@ const backendRouter = require("./routes/backend");
 const termRouter = require("./routes/term");
 const policyRouter = require("./routes/policy");
 const registerRouter = require("./routes/register");
+const partnerRouter = require("./routes/partner");
 const scholarshipRouter = require("./routes/scholarship");
 const scholarshipRegisterRouter = require("./routes/register-scholarship");
 
@@ -27,17 +28,17 @@ const app = express();
 app.use(cors());
 
 // app.use(redirectHttps([/localhost:(\d{4})/], [/\/error/], 301));
-app.use(function requireHTTPS(req, res, next) {
+// app.use(function requireHTTPS(req, res, next) {
   // The 'x-forwarded-proto' check is for Heroku
-  if (
-    !req.secure &&
-    req.get("x-forwarded-proto") !== "https" &&
-    process.env.NODE_ENV !== "development"
-  ) {
-    return res.redirect("https://" + req.get("host") + req.url);
-  }
-  next();
-});
+//   if (
+//     !req.secure &&
+//     req.get("x-forwarded-proto") !== "https" &&
+//     process.env.NODE_ENV !== "development"
+//   ) {
+//     return res.redirect("https://" + req.get("host") + req.url);
+//   }
+//   next();
+// });
 
 // Robot.txt
 app.use("/robots.txt", function(req, res, next) {
@@ -85,6 +86,7 @@ app.use("/mobile", mobileRouter);
 app.use("/backend", backendRouter);
 app.use("/term-and-conditions", termRouter);
 app.use("/privacy-policy", policyRouter);
+app.use("/partnership", partnerRouter);
 app.use("/register", cache(60), registerRouter);
 app.use("/scholarship", scholarshipRouter);
 app.use("/scholarship-register", scholarshipRegisterRouter);
