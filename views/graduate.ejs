@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document Title -->
+    <title>Nextbyte - <%= title %></title>
+
+    <meta
+      name="description"
+      content="Nextbyte terbentuk oleh kepercayaan bahwa semua orang bisa belajar programming. Tujuan kami adalah kesuksesan dan masa depan murid."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <% include ./partials/head %>
+  </head>
+
+  <body>
+      <% include ./partials/navbar %>
+
+      <!-- Page title -->
+      <section
+      class="page-title-inner banner overlay6 home2-vs1-bg"
+      data-bg-img="https://www.digitalcrafts.com/img/houston-coding-boot-camp.jpg"
+   >
+         <div class="page-title-wrap crypto-patern">
+            <div class="container">
+            <div class="row align-items-center justify-content-center">
+               <div class="col">
+                  <!-- page title inner -->
+                  <div
+                  class="page-title text-center"
+                  data-animate="fadeInUp"
+                  data-delay="1.05"
+                  >
+                     <h1 class="about-page-banner">Profile lulusan kami</h1>
+                     <ul class="nav m-0 justify-content-center">
+                        <li><a href="/" title="Home">Home</a></li>
+                        <li><a href="#" title="About Us">Graduates</a></li>
+                     </ul>
+                  </div>
+                  <!-- End of page title inner -->
+               </div>
+            </div>
+            </div>
+         </div>
+      </section>
+      <!-- End of page title -->
+
+      <!-- Extra featurs area -->
+      <section>
+         <div class="Extra--feature-area type3">
+            <div class="container">
+               <div class="row">
+                     <div class="col-xl-10 offset-xl-1 col-md-12">
+                        <!-- features area wrap -->
+                        <div class="feature--area-wrap">
+                           <div class="feature-text text-center">
+                              <p>Masukan Nomor <i><strong>Nextbyte Certified ID</strong></i></p>
+                           </div>
+                           <div class="domain-search-field primary-form parsley-validate">
+                              <form novalidate>
+                                 <input type="text" placeholder="Masukan ID ..." required >
+                                 <button type="submit">Search ID <span><i class="fa fa-search"></i></span></button>
+
+                              </form>
+                           </div>
+                           <div class="feature-text text-right" style="margin-top: 20px;">
+                              <p><strong><i>* format :</i></strong> NB-(batch)-ID | contoh : <span style="color: teal;">NB-1-Xy10cuSP5rJIbH5XbLcO</span></p>
+                           </div>
+                        </div>
+                        <!--End of features area wrap -->
+                     </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--End of Extra featurs area -->
+
+      
+     
+
+      <% include ./partials/footer %> 
+
+      <!-- ==== Ratina js file==== -->
+      <script src="plugins/retinajs/retina.min.js"></script>
+      <script src="js/graduate.js"></script>
+      <% include ./partials/script %>
+  </body>
+</html>

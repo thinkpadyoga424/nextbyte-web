@@ -22,6 +22,7 @@ const registerRouter = require("./routes/register");
 const partnerRouter = require("./routes/partner");
 const scholarshipRouter = require("./routes/scholarship");
 const scholarshipRegisterRouter = require("./routes/register-scholarship");
+const graduateRouter = require('./routes/graduate')
 
 const app = express();
 
@@ -90,6 +91,7 @@ app.use("/partnership", partnerRouter);
 app.use("/register", cache(60), registerRouter);
 app.use("/scholarship", scholarshipRouter);
 app.use("/scholarship-register", scholarshipRegisterRouter);
+app.use("/graduates", graduateRouter);
 
 const sitemap = sm.createSitemap({
   hostname: "https://nextbyte.co",
