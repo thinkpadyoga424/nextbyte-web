@@ -94,7 +94,7 @@ formID.addEventListener('submit', e => {
 
             <div class="profile-user-info">
                <div class="profile-info-row">
-                  <div class="profile-info-name"> Final Project </div>
+                  <div class="profile-info-name"> Nilai Project </div>
 
                   <div class="profile-info-value">
                      <span>${res.data.score}</span>
