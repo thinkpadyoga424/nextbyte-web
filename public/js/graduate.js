@@ -24,13 +24,10 @@ formID.addEventListener('submit', e => {
             })
          }
 
-         console.log(response.status)
-
          return response.json()
       })
       .then(res => {
 
-         console.log(res.data)
 
          if (res.data.id === undefined) {
             detailProfile.innerHTML = ""
