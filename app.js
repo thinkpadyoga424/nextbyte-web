@@ -24,7 +24,7 @@ app.use(cors());
 app.use("/robots.txt", function(req, res, next) {
   res.type("text/plain");
   res.send(
-    "User-agent: *\nDisallow: /users\nDisallow: /team\n\n\nSitemap: https://nextbyte.co/sitemap.xml"
+    "User-agent: *\nDisallow: /users\nDisallow: /team\n\n\nSitemap: https://nextbyte-website-240706.appspot.com/sitemap.xml"
   );
 });
 
