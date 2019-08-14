@@ -32,16 +32,19 @@ function newsletterSection(event) {
 
   fetch(url, request)
     .then(response => {
+        console.log(response)
+        if (response.status === 200) {
+          Swal.fire({
+            type: "success",
+            title: "Terima Kasih Telah Subscribe",
+            text: email,
+            showConfirmButton: true
+        });
+      }
       return response;
     })
     .then(data => {
-      console.log(data);
-      Swal.fire({
-        type: "success",
-        title: "Terima Kasih Telah Subscribe",
-        text: email,
-        showConfirmButton: true
-      });
+      console.log(data)
       document.getElementById("newsletter-email").value = "";
     })
     .catch(err1 => {
