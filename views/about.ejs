@@ -14,11 +14,15 @@
 
   <body>
     <!-- Preloader -->
-    <div class="preLoader">
+    <!-- <div class="preLoader">
       <div class="preload-img">
-        <img src="img/favicon.png" alt="favicon" class="pre-img" />
+        <img
+          src="https://res.cloudinary.com/nextbyte-co/image/upload/v1558706314/nextbyte-web/favicon_cid6ul.png"
+          alt="favicon"
+          class="pre-img"
+        />
       </div>
-    </div>
+    </div> -->
     <!-- End Of Preloader -->
 
     <% include ./partials/navbar %>
@@ -40,8 +44,10 @@
               >
                 <h1 class="about-page-banner">Tentang Bootcamp Kami</h1>
                 <ul class="nav m-0 justify-content-center">
-                  <li><a class="about-a" href="/">Home</a></li>
-                  <li><a class="about-a" href="#">About Us</a></li>
+                  <li><a class="about-a" href="/" title="Home">Home</a></li>
+                  <li>
+                    <a class="about-a" href="#" title="About Us">About Us</a>
+                  </li>
                 </ul>
               </div>
               <!-- End of page title inner -->
@@ -81,9 +87,6 @@
                 lebih fokus dan passionate dalam menjalani peran mereka
                 masing-masing di industri digital.
               </p>
-              <!-- <a href="#" class="btn btn-transparent waves-effect style-4"
-                >Get Started</a
-              > -->
             </div>
             <!-- End of about our company -->
           </div>
@@ -91,7 +94,7 @@
             <!-- our company image -->
             <div class="our-company-img">
               <img
-                src="img/about-company.png"
+                src="https://res.cloudinary.com/nextbyte-co/image/upload/v1558706317/nextbyte-web/about-company_nmq2ft.png"
                 alt="About our company"
                 data-rjs="2"
               />
@@ -110,7 +113,11 @@
           <div class="col-md-5">
             <!-- company goal image -->
             <div class="company-goal-img">
-              <img src="img/about-next.png" alt="Company Goal" data-rjs="2" />
+              <img
+                src="https://res.cloudinary.com/nextbyte-co/image/upload/v1558706317/nextbyte-web/about-next_on8d24.png"
+                alt="Company Goal"
+                data-rjs="2"
+              />
             </div>
             <!-- End of company goal image -->
           </div>
@@ -160,9 +167,6 @@
                     </p>
                   </li>
                 </ul>
-                <!-- <a href="#" class="btn btn-transparent waves-effect style-4"
-                  >Get Started</a
-                > -->
               </div>
             </div>
             <!-- End of company goal text -->
@@ -173,12 +177,12 @@
     <!-- End of What we get -->
 
     <!-- Our Team Section -->
-    <section data-animate="fadeInUp" data-delay=".80" class="pt-130 pb-70">
+    <section data-animate="fadeInUp" data-delay=".80" class="pt-80 pb-70">
       <div class="container">
         <div class="row heading">
           <div class="col-md-12 col-md-offset-8">
             <h2 class="text-center bottom-line">Meet Our Team</h2>
-            <p class="subheading text-center">Creative Squad</p>
+            <p class="subheading team-subtitle text-center">Creative Squad</p>
           </div>
         </div>
 
@@ -200,16 +204,36 @@
                       <%= data[0][i].content %>
                     </text>
                     <div class="socials">
-                      <a href="#"><i class="fab fa-facebook"></i></a>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                      <a href="#"><i class="fab fa-linkedin"></i></a>
-                      <a href="#"><i class="fa fa-envelope"></i></a>
+                      <a
+                        class="mr-4"
+                        href="#"
+                        title="Facebook <%= data[0][i].name %>"
+                        ><i class="fab fa-facebook"></i
+                      ></a>
+                      <a
+                        class="mr-4"
+                        href="#"
+                        title="Twitter <%= data[0][i].name %>"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                      <a
+                        class="mr-4"
+                        href="#"
+                        title="LinkedIn <%= data[0][i].name %>"
+                        ><i class="fab fa-linkedin"></i
+                      ></a>
+                      <a
+                        class="mr-4"
+                        href="#"
+                        title="Email <%= data[0][i].name %>"
+                        ><i class="fa fa-envelope"></i
+                      ></a>
                     </div>
                   </div>
                 </div>
               </div>
               <h6 class="team-title"><%= data[0][i].name %></h6>
-              <span><%= data[0][i].job_position %></span>
+              <span class="team-subtitle"><%= data[0][i].job_position %></span>
             </div>
           </div>
           <!-- end team member -->

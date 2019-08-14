@@ -1,3 +1,104 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document Title -->
+    <title>Nextbyte - 404 Not Found</title>
+
+    <meta
+      name="description"
+      content="Nextbyte terbentuk oleh kepercayaan bahwa semua orang bisa belajar programming. Tujuan kami adalah kesuksesan dan masa depan murid."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <% include ./partials/head %>
+  </head>
+
+  <body style="background-color: #51dfa2">
+    <!-- Preloader -->
+    <!-- <div class="preLoader">
+      <div class="preload-img">
+        <img
+          src="https://res.cloudinary.com/nextbyte-co/image/upload/v1558706314/nextbyte-web/favicon_cid6ul.png"
+          alt="favicon"
+          class="pre-img"
+        />
+      </div>
+    </div> -->
+    <!-- End Of Preloader -->
+
+    <!--about our company -->
+    <section class="pt-130 error-page">
+      <div data-animate="fadeInLeft" data-delay="1.5" class="container">
+        <div id="clouds">
+          <div class="cloud x1">
+            <img
+              src="https://res.cloudinary.com/nextbyte-co/image/upload/v1558706314/nextbyte-web/favicon_cid6ul.png"
+              alt="logo"
+            />
+          </div>
+          <div class="cloud x1_5">
+            <img
+              src="https://res.cloudinary.com/nextbyte-co/image/upload/v1558706314/nextbyte-web/favicon_cid6ul.png"
+              alt="logo"
+            />
+          </div>
+          <div class="cloud x2">
+            <img
+              src="https://res.cloudinary.com/nextbyte-co/image/upload/v1558706314/nextbyte-web/favicon_cid6ul.png"
+              alt="logo"
+            />
+          </div>
+          <div class="cloud x3">
+            <img
+              src="https://res.cloudinary.com/nextbyte-co/image/upload/v1558706314/nextbyte-web/favicon_cid6ul.png"
+              alt="logo"
+            />
+          </div>
+          <div class="cloud x4">
+            <img
+              src="https://res.cloudinary.com/nextbyte-co/image/upload/v1558706314/nextbyte-web/favicon_cid6ul.png"
+              alt="logo"
+            />
+          </div>
+          <div class="cloud x5">
+            <img
+              src="https://res.cloudinary.com/nextbyte-co/image/upload/v1558706314/nextbyte-web/favicon_cid6ul.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+        <div class="row err-content">
+          <div class="col-md-12 text-center">
+            <!-- our company image -->
+            <div class="our-err-img">
+              <img
+                src="https://res.cloudinary.com/nextbyte-co/image/upload/v1558706315/nextbyte-web/banner/error404_aopucr.png"
+                alt="About our company"
+                data-rjs="2"
+              />
+            </div>
+            <div class="pt-30">
+              <h1>404 Not Found</h1>
+              <h4>
+                Halaman yang dan cari (https://nextbyte.co<span
+                  id="urlError"
+                ></span
+                >) tidak tersedia, maaf ya.
+              </h4>
+            </div>
+            <div class="wrapper-inner-tab-backgrounds-second pt-30">
+              <a class="sim-button button13" href="/">Back to Home Page</a>
+            </div>
+            <!-- End of our company image -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of about our cumpany -->
+
+    <% include ./partials/script %>
+  </body>
+  <script>
+    const urlError = window.location.pathname;
+    document.getElementById("urlError").innerHTML = urlError;
+  </script>
+</html>

@@ -380,7 +380,8 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  background: url(../img/VPN_Pattern.png);
+  /* background: url(../img/VPN_Pattern.png); */
+  background: url("https://res.cloudinary.com/nextbyte-co/image/upload/v1558933566/nextbyte-web/VPN_Pattern_lbtpx7.png");
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
@@ -2446,7 +2447,7 @@ label input[type="radio"] {
   width: 100%;
   top: 0;
   left: 0;
-  background: url(../img/Crypto_Pattern20.png);
+  /* background: url(../img/Crypto_Pattern20.png); */
 }
 .home-banner2 .banner--inner-text {
   margin-top: 107px;
@@ -2540,7 +2541,8 @@ label input[type="radio"] {
   width: 100%;
   top: 0;
   left: 0;
-  background-image: url(../img/VPN_Pattern.png);
+  /* background-image: url(../img/VPN_Pattern.png); */
+  background-image: url("https://res.cloudinary.com/nextbyte-co/image/upload/v1558933566/nextbyte-web/VPN_Pattern_lbtpx7.png");
 }
 .home-banner3 .banner--inner-text h1 {
   color: #fff;
@@ -3922,7 +3924,8 @@ div#update-chart {
   width: 11px;
   left: 58%;
   top: -17px;
-  background-image: url(../img/icons/countdown.png);
+  /* background-image: url(../img/icons/countdown.png); */
+  background-image: url("https://res.cloudinary.com/nextbyte-co/image/upload/v1558933725/nextbyte-web/icons/countdown_mgyvvf.png");
   background-repeat: no-repeat;
 }
 .crypto--progress-inner p {
@@ -5140,7 +5143,7 @@ img.line-chart {
 /*24.01: use crypdrone token*/
 
 .use-crypdrone-token p {
-  margin-bottom: 66px;
+  /* margin-bottom: 66px; */
 }
 
 .use-crypdrone-token .use-crypdrone-details h4 {
@@ -5154,7 +5157,7 @@ img.line-chart {
 }
 
 .use-crypdrone-token .use-crypdrone-details p {
-  margin-bottom: 46px;
+  margin-bottom: 26px;
 }
 
 /*24.02: use crypdrone token image*/
@@ -6344,10 +6347,10 @@ img.line-chart {
   color: #dbdfff;
 }
 .single--pricing-plan.active .btn-fill:before {
-  background: #51dfa2;
+  background: transparent;
 }
 .single--pricing-plan.active .btn-fill {
-  background: #51dfa2;
+  background: transparent;
 }
 .single--pricing-plan.active .pricing-plan-body p {
   color: #fff;
@@ -6464,10 +6467,10 @@ img.line-chart {
   padding-bottom: 10px;
 }
 .type2 .single--pricing-plan.active .pricing-plan-body p {
-  color: #51dfa2;
+  color: #fff;
 }
 .type2 .single--pricing-plan.active .pricing-plan-body ul li {
-  color: #51dfa2;
+  color: #fff;
 }
 .type2 .single--pricing-plan.activeline span:last-child {
   position: absolute;
@@ -6501,16 +6504,16 @@ img.line-chart {
   display: block;
 }
 .type2 .single--pricing-plan .btn.btn-fill {
-  border-color: #51dfa2;
+  border-color: #fff;
 }
 .type2 .single--pricing-plan .btn.btn-fill:before {
   background: #51dfa2;
 }
 .type2 .single--pricing-plan .btn.btn-fill:hover {
-  color: #404744;
+  color: #51dfa2;
 }
 .type2 .single--pricing-plan .btn.btn-fill:hover:before {
-  background: #51dfa2;
+  background: #fff;
 }
 /*==============================================
     35: Testimonial carousel and partner carousel
@@ -6849,7 +6852,7 @@ img.line-chart {
 .zigzag-wrap h3 {
   color: #fff;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 24px;
 }
 
@@ -7516,6 +7519,7 @@ img.line-chart {
 }
 .contact-btn {
   margin-top: 24px;
+  padding: 10px;
 }
 .contact-form-info h2 {
   margin-bottom: 41px;
@@ -7822,7 +7826,8 @@ img.line-chart {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e64ff', endColorstr='#2b58ff',GradientType=1 );
 }
 .home-page1-light .crypto--progress-inner .progress:after {
-  background-image: url(../img/icons/countdown2.png);
+  /* background-image: url(../img/icons/countdown2.png); */
+  background-image: url("https://res.cloudinary.com/nextbyte-co/image/upload/v1558933760/nextbyte-web/icons/countdown2_bgmmxv.png");
 }
 .home-page1-light .countdown--progress-inner {
   box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.1);
@@ -8612,12 +8617,13 @@ h1 span {
 }
 /*49.01: pettrns*/
 .crypto-patern {
-  background-image: url(../img/Crypto_Pattern20.png);
+  /* background-image: url(../img/Crypto_Pattern20.png); */
   background-repeat: repeat;
   background-position: top center;
 }
 .vpn-patern {
-  background-image: url(../img/VPN_Pattern.png);
+  /* background-image: url(../img/VPN_Pattern.png); */
+  background-image: url("https://res.cloudinary.com/nextbyte-co/image/upload/v1558933566/nextbyte-web/VPN_Pattern_lbtpx7.png");
   background-repeat: repeat;
   background-position: top center;
 }
@@ -8750,7 +8756,7 @@ h1 span {
 .back-to-top a {
   width: 35px;
   height: 35px;
-  background: #53e1ff;
+  background: #51dfa2;
   box-shadow: 1px 5px 19px rgba(0, 0, 0, 0.15);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -8885,4 +8891,18 @@ h1 span {
 }
 [data-animate].animated {
   visibility: visible;
+}
+
+/* Hiring Partner */
+/* .image-size img {
+  height: 75px;
+} */
+
+.box-partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+  min-height: 200px;
 }

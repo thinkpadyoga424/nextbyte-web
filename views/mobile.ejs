@@ -5,7 +5,7 @@
     <title>Nextbyte - <%= title %></title>
     <meta
       name="description"
-      content="Mobile Development adalah full training program selama 10 minggu dimana kamu akan di bimbing oleh mentor kami yang tentunya sudah ahli di bidangnya. Mulai dari hal yang fundamental sampai kamu bisa membuat aplikasi kamu sendiri."
+      content="Mobile Development adalah full training program selama 6 minggu dimana kamu akan di bimbing oleh mentor kami yang tentunya sudah ahli di bidangnya. Mulai dari hal yang fundamental sampai kamu bisa membuat aplikasi kamu sendiri."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <% include ./partials/head %>
@@ -13,11 +13,15 @@
 
   <body>
     <!-- Preloader -->
-    <div class="preLoader">
+    <!-- <div class="preLoader">
       <div class="preload-img">
-        <img src="img/favicon.png" alt="favicon" class="pre-img" />
+        <img
+          src="https://res.cloudinary.com/nextbyte-co/image/upload/v1558706314/nextbyte-web/favicon_cid6ul.png"
+          alt="favicon"
+          class="pre-img"
+        />
       </div>
-    </div>
+    </div> -->
     <!-- End Of Preloader -->
 
     <% include ./partials/navbar %>
@@ -35,12 +39,16 @@
               <div
                 class="page-title text-center"
                 data-animate="fadeInUp"
-                data-delay="1.05"
+                data-delay="0.10"
               >
                 <h1 class="about-page-banner">Mobile Development Programs</h1>
                 <ul class="nav m-0 justify-content-center">
-                  <li><a href="/">Home</a></li>
-                  <li><a href="#">Program > Mobile Development</a></li>
+                  <li><a href="/" title="Home">Home</a></li>
+                  <li>
+                    <a href="#" title="Programs - Mobile Development"
+                      >Program > Mobile Development</a
+                    >
+                  </li>
                 </ul>
               </div>
               <!-- End of page title inner -->
@@ -53,13 +61,22 @@
 
     <!-- coming soon  inner -->
     <section class="term-background pt-100 pb-100">
-      <div data-animate="fadeInUp" data-delay="1.5" class="container">
+      <div class="container">
         <div class="row">
           <div class="col-md-8">
             <!-- section title -->
             <div class="section-title type4 mb-30">
-              <span class="dosis about-page-subtitle">Program Overview</span>
-              <h1 class="overview-title">
+              <span
+                data-animate="fadeInUp"
+                data-delay="0.10"
+                class="dosis about-page-subtitle"
+                >Program Overview</span
+              >
+              <h1
+                data-animate="fadeInUp"
+                data-delay="0.10"
+                class="overview-title"
+              >
                 Ayo Buat Aplikasi Mobile Kamu Sendiri
               </h1>
             </div>
@@ -67,13 +84,13 @@
 
             <!-- about our company -->
             <div class="overview-content">
-              <p>
-                Mobile Development adalah full training program selama 10 minggu
+              <p data-animate="fadeInUp" data-delay="0.10">
+                Mobile Development adalah full training program selama 6 minggu
                 dimana kamu akan di bimbing oleh mentor kami yang tentunya sudah
                 ahli di bidangnya. Mulai dari hal yang fundamental sampai kamu
                 bisa membuat aplikasi kamu sendiri.
               </p>
-              <p>
+              <p data-animate="fadeInUp" data-delay="0.10">
                 Terbuka untuk kamu berlatar belakang IT maupun non-IT , karena
                 disini kamu akan diajarkan membangun aplikasi mobile
                 multiplatform Android dan IOS dari arsitektur frontend dan juga
@@ -81,6 +98,9 @@
                 lengkap serta bebas untuk melakukan diskusi dengan mentor.
               </p>
               <a
+                data-animate="fadeInUp"
+                data-delay="0.10"
+                title="Get Started"
                 href="#mobileSylabus"
                 class="btn btn-transparent waves-effect style-4"
                 >Get Started</a
@@ -88,7 +108,6 @@
             </div>
             <!-- End of about our company -->
           </div>
-          <div class="col-md-4"></div>
         </div>
       </div>
     </section>
@@ -100,60 +119,264 @@
     </div>
     <!-- End of Timeline -->
 
+    <!-- Benefits of Mobile -->
+    <section class="pt-90 pb-90 home6-section-bg">
+      <div class="container">
+        <div class="row">
+          <div data-animate="fadeInUp" data-delay="0.7" class="col-lg-6">
+            <div class="use--crypdrone-wrap">
+              <!-- heading title type2 -->
+              <div class="section-title-type2">
+                <img src="img/icons/exlamation.png" alt="exlamation" />
+                <h2>Aplikasi seperti apa yang bisa kamu bangun?</h2>
+              </div>
+              <!--End of heading title type2 -->
+
+              <!-- use crypdrone token -->
+              <div class="use-crypdrone-token">
+                <p>
+                  Dalam sebulan kamu akan dibimbing praktisi handal untuk bisa
+                  membangun aplikasi mobile Android dan iOS menggunakan
+                  framework Flutter. Tentunya kamu akan diajarkan bahasa
+                  pemograman menggunakan bahasa Dart yang menjadi pondasi utama
+                  dari framework Flutter.
+                </p>
+                <!-- single use crypdrone token-->
+                <div class="single-use-crypdrone media">
+                  <div class="use-crypdrone-icon">
+                    <img
+                      src="img/icons/use-token3.svg"
+                      alt="token3"
+                      class="svg"
+                    />
+                  </div>
+                  <div class="use-crypdrone-details media-body">
+                    <h4>E-Commerce</h4>
+                    <p>
+                      Membuat aplikasi jual beli online
+                    </p>
+                  </div>
+                </div>
+                <!-- End of single use crypdrone token-->
+
+                <!-- single use crypdrone token-->
+                <div class="single-use-crypdrone media">
+                  <div class="use-crypdrone-icon">
+                    <img
+                      src="img/icons/use-token3.svg"
+                      alt="token3"
+                      class="svg"
+                    />
+                  </div>
+                  <div class="use-crypdrone-details media-body">
+                    <h4>Geolocation App</h4>
+                    <p>
+                      Membuat aplikasi open map location
+                    </p>
+                  </div>
+                </div>
+                <!-- End of single use crypdrone token-->
+
+                <!-- single use crypdrone token-->
+                <div class="single-use-crypdrone media">
+                  <div class="use-crypdrone-icon">
+                    <img
+                      src="img/icons/use-token3.svg"
+                      alt="token3"
+                      class="svg"
+                    />
+                  </div>
+                  <div class="use-crypdrone-details media-body">
+                    <h4>Dating App</h4>
+                    <p>
+                      Membuat aplikasi kencan / perjodohan
+                    </p>
+                  </div>
+                </div>
+                <!-- End of single use crypdrone token-->
+
+                <!-- single use crypdrone token-->
+                <div class="single-use-crypdrone media">
+                  <div class="use-crypdrone-icon">
+                    <img
+                      src="img/icons/use-token3.svg"
+                      alt="token3"
+                      class="svg"
+                    />
+                  </div>
+                  <div class="use-crypdrone-details media-body">
+                    <h4>Chating App</h4>
+                    <p>
+                      Membuat aplikasi real-time chating
+                    </p>
+                  </div>
+                </div>
+                <!-- End of single use crypdrone token-->
+
+                <!-- single use crypdrone token-->
+                <div class="single-use-crypdrone media">
+                  <div class="use-crypdrone-icon">
+                    <img
+                      src="img/icons/use-token3.svg"
+                      alt="token3"
+                      class="svg"
+                    />
+                  </div>
+                  <div class="use-crypdrone-details media-body">
+                    <h4>Dan masih banyak lagi</h4>
+                    <!-- <p>
+                      Jika kamu orang yang berkutat dibidang bisnis, kamu dapat
+                      membangun Startup dengan aplikasi buatanmu sendiri
+                    </p> -->
+                  </div>
+                </div>
+                <!-- End of single use crypdrone token-->
+              </div>
+              <!--End of use crypdrone token -->
+            </div>
+          </div>
+          <div data-animate="fadeInUp" data-delay="0.9" class="col-lg-6">
+            <!-- crypdrone animate image -->
+            <div class="crypdrone-token-image">
+              <img
+                src="https://res.cloudinary.com/nextbyte-co/image/upload/v1559032644/nextbyte-web/programs/mobile_eipdca.png"
+                alt="mobile_eipdca"
+              />
+            </div>
+            <!--End of crypdrone animate image -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Benefits of Mobile -->
+
     <!-- Activity -->
     <% include ./partials/agenda %>
     <!-- End of Activity -->
 
-     <!-- Priceing  -->
-     <section id="programs" class="home6-section-bg-2 pt-80 pb-60">
-      <div class="container" data-animate="fadeInUp">
+    <!-- Hiring Partner -->
+    <section class="pb-60">
+      <% include ./sections/hiring-partner %>
+    </section>
+    <!-- End of Hiring Partner -->
+
+    <!-- pricecing plan type 2 -->
+    <section id="programs" class="vpn-patern pt-30 pb-60">
+      <div
+        data-animate="fadeInUp"
+        data-delay="0.7"
+        class="container pricing-plan type2"
+      >
+        <h2 class="about-page-title text-center pb-30">Biaya Program</h2>
         <div class="row justify-content-center">
-          <div class="col-xl-12 col-lg-8">
-            <!-- section title -->
-            <div class="text-center mb-30">
-              <h1 style="color: #51dfa2;">Biaya Program</h1>
-            </div>
-            <!-- End of section title -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-6 text-center">
-            <div class="style-four">
-              <del>
-                <span class="amount">Rp15,000,000<sup>.00</sup></span>
-              </del>
-              <ins>
-                <span class="amount">Rp9,000,000<sup>.00</sup></span>
-              </ins>
-              <hr>
-              <div>
-                <p>Biaya tersebut sudah mencakup administrasi dan seluruh operasional selama proses bootcamp berlangsung</p>
+          <div class="col-md-6">
+            <!-- single pricing plan -->
+            <div class="single--pricing-plan active waves-effect">
+              <!--plan top -->
+              <div class="pricing-plan-top">
+                <div class="plan-top-head">
+                  <h4>Mobile Development</h4>
+                  <div class="underline-wrap">
+                    <div class="unerline theme-color">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- plan top head text -->
+
+                <div class="plantop-head-text">
+                  <h3 class="h2 price-bootcamp"><span>Rp </span>25,000,000</h3>
+                </div>
+                <div class="plan-top-head">
+                  <h4>Now Only</h4>
+                  <div class="underline-wrap">
+                    <div class="unerline theme-color">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="plantop-head-text">
+                  <h3 class="h2"><span>Rp </span>&nbsp;15,000,000</h3>
+                </div>
+                <!--End of plan top head text -->
               </div>
+              <p class="sdkb">*Syarat dan ketentuan berlaku.</p>
+              <!--End of plan top -->
             </div>
+            <!-- End of single pricing plan -->
           </div>
         </div>
-        
       </div>
     </section>
+    <!-- end of pricecing plan type 2 -->
 
-    <!-- End of Pricing -->
+    <!-- Register -->
+    <section id="programs" class="vpn-patern pt-80 pb-60">
+      <div class="container pricing-plan type2">
+        <h2
+          data-animate="fadeInUp"
+          data-delay="0.6"
+          class="about-page-title text-center pb-30"
+        >
+          Jadwal Program
+        </h2>
+        <div class="row justify-content-center">
+          <div data-animate="fadeInUp" data-delay="0.7" class="col-md-6">
+            <!-- single pricing plan -->
+            <div class="single--pricing-plan active waves-effect">
+              <!--plan top -->
+              <div class="pricing-plan-top">
+                <div class="plan-top-head">
+                  <h4>Mobile Development < Batch 1 /></h4>
+                  <div class="underline-wrap">
+                    <div class="unerline theme-color">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- plan top head text -->
+                <div class="plantop-head-text justify-content-center">
+                  <h3><6 Weeks/></h3>
+                </div>
+                <hr
+                  style="height:3px; border:none; color:#fff; background-color: #fff;"
+                />
+                <div class="plantop-head-text text-center row">
+                  <div class="col-md-6">
+                    <h4>Mon - Fri</h4>
+                  </div>
+                  <div class="col-md-6">
+                    <h4>09:00 - 16:00</h4>
+                  </div>
+                </div>
+                <hr
+                  style="height:3px; border:none; color:#fff; background-color: #fff;"
+                />
+                <div class="pt-30 text-center">
+                  <a
+                    title="Ayo Daftar Sekarang!"
+                    class="btn btn-fill"
+                    style="border: 1px solid white; color: black;"
+                    >LULUS</a
+                  >
+                </div>
 
-
-    <!-- Card Cicilan -->
-
-    <% include ./partials/cicilan %>
-
-    <!-- End of Card Ciclan -->
-
-    <% include ./partials/registerlink %>
-    
-    <!-- Newsletter -->
-
-    <% include ./sections/newsletter %>
-
-    <!-- End of Newsletter -->
-
+                <!--End of plan top head text -->
+              </div>
+              <!--End of plan top -->
+            </div>
+            <!-- End of single pricing plan -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Register -->
 
     <% include ./partials/footer %> <% include ./partials/script %>
   </body>

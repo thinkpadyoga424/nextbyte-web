@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document Title -->
+    <title>Nextbyte - <%= title %></title>
+
+    <meta
+      name="description"
+      content="Nextbyte terbentuk oleh kepercayaan bahwa semua orang bisa belajar programming. Tujuan kami adalah kesuksesan dan masa depan murid."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <% include ./partials/head %>
+
+   <style>
+
+      span {
+         color: #999;
+      }
+
+      h4 span {
+         color: #333;
+      }
+
+      .align-center, .center {
+         text-align: center!important;
+      }
+
+      .profile-user-info {
+         display: table;
+         width: 98%;
+         width: calc(100% - 24px);
+         margin: 0 auto
+      }
+
+      .profile-info-row {
+         display: table-row
+      }
+
+      .profile-info-name,
+      .profile-info-value {
+         display: table-cell;
+         border-top: 1px dotted #D5E4F1
+      }
+
+      .profile-info-name {
+         text-align: right;
+         padding: 6px 10px 6px 4px;
+         font-weight: 400;
+         color: #667E99;
+         background-color: transparent;
+         width: 110px;
+         vertical-align: middle
+      }
+
+      .profile-info-value {
+         padding: 6px 4px 6px 6px
+      }
+
+      .profile-info-value>span+span:before {
+         display: inline;
+         content: ",";
+         margin-left: 1px;
+         margin-right: 3px;
+         color: #666;
+         border-bottom: 1px solid #FFF
+      }
+
+      .profile-info-value>span+span.editable-container:before {
+         display: none
+      }
+
+      .profile-info-row:first-child .profile-info-name,
+      .profile-info-row:first-child .profile-info-value {
+         border-top: none
+      }
+
+      .profile-user-info-striped {
+         border: 1px solid #DCEBF7
+      }
+
+      .profile-user-info-striped .profile-info-name {
+         color: #336199;
+         background-color: #EDF3F4;
+         border-top: 1px solid #F7FBFF
+      }
+
+      .profile-user-info-striped .profile-info-value {
+         border-top: 1px dotted #DCEBF7;
+         padding-left: 12px
+      }
+
+      .profile-picture {
+         border: 1px solid #CCC;
+         background-color: #FFF;
+         padding: 4px;
+         display: inline-block;
+         max-width: 100%;
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         box-shadow: 1px 1px 1px rgba(0, 0, 0, .15)
+      }
+
+
+      @media only screen and (max-width:480px) {
+         .profile-info-name {
+            width: 80px
+         }
+         .profile-user-info-striped .profile-info-name {
+            float: none;
+            width: auto;
+            text-align: left;
+            padding: 6px 4px 6px 10px;
+            display: block
+         }
+         .profile-user-info-striped .profile-info-value {
+            margin-left: 10px;
+            display: block
+         }
+         .user-profile .memberdiv {
+            width: 50%;
+            margin-left: 0;
+            margin-right: 0
+         }
+      }
+
+   </style>
+
+  </head>
+
+  <body>
+      <% include ./partials/navbar %>
+
+      <!-- Page title -->
+      <section
+      class="page-title-inner banner overlay6 home2-vs1-bg"
+      data-bg-img="https://www.digitalcrafts.com/img/houston-coding-boot-camp.jpg"
+   >
+         <div class="page-title-wrap crypto-patern">
+            <div class="container">
+            <div class="row align-items-center justify-content-center">
+               <div class="col">
+                  <!-- page title inner -->
+                  <div
+                  class="page-title text-center"
+                  data-animate="fadeInUp"
+                  data-delay="1.05"
+                  >
+                     <h1 class="about-page-banner">Profile lulusan kami</h1>
+                     <ul class="nav m-0 justify-content-center">
+                        <li><a href="/" title="Home">Home</a></li>
+                        <li><a href="#" title="Graduates">Graduates</a></li>
+                     </ul>
+                  </div>
+                  <!-- End of page title inner -->
+               </div>
+            </div>
+            </div>
+         </div>
+      </section>
+      <!-- End of page title -->
+
+      <!-- Extra featurs area -->
+      <section>
+         <div class="Extra--feature-area type3">
+            <div class="container">
+               <div class="row">
+                     <div class="col-xl-10 offset-xl-1 col-md-12">
+                        <!-- features area wrap -->
+                        <div class="feature--area-wrap">
+                           <div class="feature-text text-center">
+                              <p>Masukan Nomor <i><strong>Nextbyte Certified ID</strong></i></p>
+                           </div>
+                           <div class="domain-search-field primary-form parsley-validate">
+                              <form novalidate id="form-id">
+                                 <input type="text" placeholder="Masukan ID ..." id="input-id" required >
+                                 <button type="submit">Search ID <span><i class="fa fa-search"></i></span></button>
+
+                              </form>
+                           </div>
+                           <div class="feature-text text-right" style="margin-top: 20px;">
+                              <p><strong><i>* format :</i></strong> NB-(batch)-ID | contoh : <span style="color: teal;">NB-1-Xy10cuSP5rJIbH5XbLcO</span></p>
+                           </div>
+                        </div>
+                        <!--End of features area wrap -->
+                     </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--End of Extra featurs area -->
+
+      <!-- Profile Graduate -->
+      <section class="pt-100 pb-80">
+         <div id="user-profile-2" class="user-profile">
+            <div class="container">
+
+               <div class="row" id="detail-profile">
+
+                  <div class="col-md-12">
+                     <p style="color: #666; text-align: center; font-size: 17px;"><i class="fa fa-graduation-cap"></i> Profile Lulusan...</p>
+                  </div>
+
+               </div>
+
+               <div class="space-20"></div>
+ 
+            </div>
+         </div>
+      </section>
+      <!-- End of Profile Graduate -->
+
+      
+     
+
+      <% include ./partials/footer %> 
+
+      <!-- ==== Ratina js file==== -->
+      <script src="plugins/retinajs/retina.min.js"></script>
+      <script src="js/graduate.js"></script>
+      <% include ./partials/script %>
+  </body>
+</html>

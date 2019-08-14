@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document Title -->
+    <title>Nextbyte - <%= title %></title>
+
+    <meta
+      name="description"
+      content="Daftar menjadi Mitra Nextbyte. Tim kami akan sangat senang untuk merespon permintaan kamu. "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <% include ./partials/head %>
+  </head>
+
+  <body>
+      <% include ./partials/navbar %>
+
+          <!-- page title wrap-->
+      <section
+         class="page-title-inner banner overlay6 home2-vs1-bg"
+         data-bg-img="https://www.digitalcrafts.com/img/houston-coding-boot-camp.jpg"
+      >
+         <div class="page-title-wrap crypto-patern">
+            <div class="container">
+            <div class="row align-items-center justify-content-center">
+               <div class="col">
+                  <!-- page title inner -->
+                  <div
+                  class="page-title text-center"
+                  data-animate="fadeInUp"
+                  data-delay="1.05"
+                  >
+                  <h1 class="about-page-banner">Saya ingin menjadi Mitra</h1>
+                  <ul class="nav m-0 justify-content-center">
+                     <li><a href="/" title="Home">Home</a></li>
+                     <li><a href="#" title="About Us">Partnership</a></li>
+                  </ul>
+                  </div>
+                  <!-- End of page title inner -->
+               </div>
+            </div>
+            </div>
+         </div>
+      </section>
+      <!-- End of page title -->
+
+      <!-- prtner area type3-->
+      <section class="pt-130 pb-130 vpn-patern">
+         <div data-animate="fadeInUp" data-delay="1.5" class="container">
+           <div class="row justify-content-center">
+             <div class="col-md-10">
+               <!-- contact info -->
+               <div class="contact-form-info type2">
+                  <h2 class="about-page-title">Pendaftaran untuk kemitraan dengan Nextbyte</h2>
+                  <p>
+                    Anda dapat menjalin hubungan kemitraan dengan kami, khusunya kemitraan terkait dengan karir dan perekrutan (Hiring Partner).
+                     Jika Anda tertarik untuk bermitra dengan kami, Anda hanya perlu mengisi form pendataran dibawah untuk melengkapi profil Anda supaya bisa kami tindak lanjuti.
+                  </p>
+
+                  <p>
+                     Semua form dibawah ini wajib Anda isi. Jika ada pesan atau pertanyaan, jangan ragu untuk disampaikan kepada kami.
+                  </p>
+                </div><br>
+                <!-- End of contact info -->
+             </div>
+           </div>
+           <div class="container">
+             <div class="row justify-content-center">
+               <div class="col-md-2"></div>
+               <div class="col-md-8">
+                 <!-- contact form -->
+                <div class="contact-form contact-page-form parsley-validate">
+                  <form id="partner-form" novalidate>
+                     <!-- form group -->
+                     <label for="name" style="color: #999;">Nama Perwakilan Perusahaan</label>
+                     <div class="form-group">
+                        <input
+                        id="partner-name"
+                        type="text"
+                        name="name"
+                        class="theme-input-style"
+                        placeholder="Nama Anda"
+                        />
+                     </div>
+                     <!--ENd of form group -->
+                     <!-- form group -->
+                     <label for="email-company" style="color: #999;">Email Perwakilan Perusahaan</label>
+                     <div class="form-group">
+                        <input
+                        id="partner-email"
+                        type="email"
+                        name="email-company"
+                        class="theme-input-style"
+                        placeholder="nama@organisasi.com"
+                        required
+                        />
+                     </div>
+                     <!-- End of form group -->
+                     <!-- form group -->
+                     <label for="phone-company" style="color: #999;">Nomor Ponsel Perwakilan Perusahaan</label>
+                     <div class="form-group">
+                        <input
+                        id="partner-phone"
+                        type="number"
+                        name="phone-company"
+                        class="theme-input-style"
+                        placeholder="ex. 081234567890"
+                        required
+                        />
+                     </div>
+                     <!--End of form group -->
+                     <!-- form group -->
+                     <label for="company-name" style="color: #999;">Nama Perusahaan</label>
+                     <div class="form-group">
+                        <input
+                        id="partner-company-name"
+                        type="text"
+                        name="company-name"
+                        class="theme-input-style"
+                        placeholder="Organisasi / Startup"
+                        required
+                        />
+                     </div>
+                     <!--End of form group -->
+                     <!-- form group -->
+                     <label for="company-address" style="color: #999;">Alamat Perusahaan</label>
+                     <div class="form-group">
+                        <input
+                        id="partner-address"
+                        type="text"
+                        name="company-address"
+                        class="theme-input-style"
+                        placeholder="ex. Jl Alamat No. X"
+                        required
+                        />
+                     </div>
+                     <!--End of form group -->
+                     <!-- form group -->
+                     <label for="company-web" style="color: #999;">Website Perusahaan</label>
+                     <div class="form-group">
+                        <input
+                        id="partner-web"
+                        type="text"
+                        name="company-web"
+                        class="theme-input-style"
+                        placeholder="https://organisasi.com"
+                        required
+                        />
+                     </div>
+                     <!--End of form group -->
+                     <!-- form group -->
+                     <label for="message" style="color: #999;">Tuliskan Pesan</label>
+                     <div class="form-group">
+                        <textarea
+                        id="partner-message"
+                        name="message"
+                        placeholder="...."
+                        class="theme-input-style"
+                        required=""
+                        ></textarea>
+                     </div>
+                     <!--End of form group -->
+                     <button type="submit" class="button-contact">
+                        Kirim
+                     </button>
+                  </form>
+               </div>
+             </div>
+             <div class="col-md-2"></div>
+           </div>
+         </div>
+       </section>
+       <!-- End of partner area type3 -->
+
+       <% include ./partials/footer %> 
+       <script src="js/partner.js"></script>
+       <% include ./partials/script %>
+   </body>
+</html>
+    

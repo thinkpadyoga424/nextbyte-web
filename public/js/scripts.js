@@ -522,38 +522,38 @@ We may release future updates so it will overwrite this file. it's better and sa
   /*===========================================
         20: team carousel activation
 ===========================================*/
-  $(".team-carousel").owlCarousel({
-    loop: true,
-    margin: 30,
-    nav: false,
-    dot: false,
-    autoWidth: true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplaySpeed: 4000,
-    responsive: {
-      0: {
-        items: 1
-      },
-      320: {
-        items: 3,
-        center: true
-      },
-      767: {
-        items: 5,
-        center: true
-      },
-      1024: {
-        items: 7,
-        center: true
-      }
-    }
-  });
+  // $(".team-carousel").owlCarousel({
+  //   loop: true,
+  //   margin: 30,
+  //   nav: false,
+  //   dot: false,
+  //   autoWidth: true,
+  //   autoplay: true,
+  //   autoplayTimeout: 5000,
+  //   autoplaySpeed: 4000,
+  //   responsive: {
+  //     0: {
+  //       items: 1
+  //     },
+  //     320: {
+  //       items: 3,
+  //       center: true
+  //     },
+  //     767: {
+  //       items: 5,
+  //       center: true
+  //     },
+  //     1024: {
+  //       items: 7,
+  //       center: true
+  //     }
+  //   }
+  // });
 
   /*=====================================================
     21: price carousel
 =====================================================*/
-  $(".price-carousel").owlCarousel({
+  /* $(".price-carousel").owlCarousel({
     loop: true,
     margin: 20,
     nav: true,
@@ -583,12 +583,12 @@ We may release future updates so it will overwrite this file. it's better and sa
         items: 10
       }
     }
-  });
+  }); */
 
   /*===========================================
         22: testimonial carousel activation
 ===========================================*/
-
+  /*
   $(".testimonial-carousel").owlCarousel({
     loop: true,
     margin: 60,
@@ -617,10 +617,11 @@ We may release future updates so it will overwrite this file. it's better and sa
       }
     }
   });
-
+*/
   /*===========================================
         23: partner carousel activation
 ===========================================*/
+  /*
   $(".partner-carousel").owlCarousel({
     loop: true,
     margin: 80,
@@ -641,10 +642,11 @@ We may release future updates so it will overwrite this file. it's better and sa
       }
     }
   });
-
+*/
   /*===========================================
         24: timeline2 carousel activation
 ===========================================*/
+  /*
   $(".timeline-carousel2").owlCarousel({
     loop: true,
     margin: 30,
@@ -669,9 +671,11 @@ We may release future updates so it will overwrite this file. it's better and sa
       }
     }
   });
+*/
   /*===========================================
         25: timeline carousel activation
 ===========================================*/
+  /*
   $(".timeline-carousel").owlCarousel({
     loop: true,
     margin: 30,
@@ -696,10 +700,11 @@ We may release future updates so it will overwrite this file. it's better and sa
       }
     }
   });
+*/
   /*===========================================
         26: partner carousel2 activation
 ===========================================*/
-
+  /*
   $(".partner-carousel2").owlCarousel({
     loop: true,
     margin: 80,
@@ -723,8 +728,8 @@ We may release future updates so it will overwrite this file. it's better and sa
         items: 7
       }
     }
-  });
-
+  }); 
+*/
   /*======================================
     27: road map activation
 ======================================*/

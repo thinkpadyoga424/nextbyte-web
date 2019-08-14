@@ -4,6 +4,20 @@
 
 /* ============== home page style =================== */
 
+.btn-newsletter {
+  background: #fff !important;
+  color: #51dfa2 !important;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn-newsletter:hover {
+  color: #fff !important;
+  background: #51dfa2 !important;
+  border: 1px solid #fff;
+}
+
 .about-image {
   margin-top: 100px;
 }
@@ -152,6 +166,12 @@ blockquote p::after {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 479px) {
+  .team-details {
+    font-size: 12px;
+  }
 }
 
 .team-details p {
@@ -928,19 +948,17 @@ table.invoices-table tr th:nth-child(1) {
 
 /* Price */
 
-.style-four {
+/* .style-four {
   margin: 1em;
   padding: 1em;
   flex-basis: 500px;
-  /* border: 1px dotted #ccc; */
   display: inline-block;
   color: #484848;
 
   border-radius: 7px;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
   background: #fff;
-  /* padding: 10px 30px 20px 30px; */
-}
+} */
 
 .style-four del {
   color: rgba(169, 169, 169, 0.5);
@@ -975,7 +993,352 @@ table.invoices-table tr th:nth-child(1) {
   font-size: 40px;
   font-weight: 500;
   text-decoration: none;
-  padding: 1em 1em 1em .5em;
+  padding: 1em 1em 1em 0.5em;
 }
 
 /* End Price */
+
+/* Syarat dan ketentuan berlaku style */
+.sdkb {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff !important;
+  font-size: 10px;
+}
+/* End of Syarat dan ketentuan */
+
+/* Date programs */
+.datePrograms {
+  border-right: 1px solid white;
+}
+/* End of Date programs */
+
+/* Error Page */
+
+.error-page {
+  background-color: #51dfa2;
+  height: 100vh;
+}
+
+.err-content {
+  z-index: 10;
+}
+
+.sim-button {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  /* margin-top: 125px; */
+  width: 40%;
+  cursor: pointer;
+}
+
+.button13 {
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+}
+.button13 {
+  color: #fff !important;
+  text-decoration: none;
+  display: block;
+}
+.button13::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.button13:hover::before {
+  opacity: 0;
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+.button13::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+}
+.button13:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+/* nextbyte melayang */
+
+.cloud {
+  background: transparent;
+
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+
+  position: absolute;
+  margin: 120px auto 20px;
+  z-index: 1;
+  transition: ease 1s;
+}
+
+.cloud:after,
+.cloud:before {
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+}
+
+.cloud:after {
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 50px;
+
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+.cloud:before {
+  width: 180px;
+  height: 180px;
+  top: -90px;
+  right: 50px;
+
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+}
+
+.x1 {
+  top: -50px;
+  left: 100px;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+  opacity: 0.9;
+  -webkit-animation: moveclouds 15s linear infinite;
+  -moz-animation: moveclouds 15s linear infinite;
+  -o-animation: moveclouds 15s linear infinite;
+}
+
+.x1_5 {
+  top: -80px;
+  left: 250px;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+  -webkit-animation: moveclouds 17s linear infinite;
+  -moz-animation: moveclouds 17s linear infinite;
+  -o-animation: moveclouds 17s linear infinite;
+}
+
+.x2 {
+  left: 250px;
+  top: 30px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6;
+  -webkit-animation: moveclouds 25s linear infinite;
+  -moz-animation: moveclouds 25s linear infinite;
+  -o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+  left: 250px;
+  bottom: -70px;
+
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.8;
+
+  -webkit-animation: moveclouds 25s linear infinite;
+  -moz-animation: moveclouds 25s linear infinite;
+  -o-animation: moveclouds 25s linear infinite;
+}
+
+.x4 {
+  left: 470px;
+  botttom: 20px;
+
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75;
+
+  -webkit-animation: moveclouds 18s linear infinite;
+  -moz-animation: moveclouds 18s linear infinite;
+  -o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+  left: 200px;
+  top: 300px;
+
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 0.8;
+
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+  0% {
+    margin-left: 1000px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+@-moz-keyframes moveclouds {
+  0% {
+    margin-left: 1000px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+@-o-keyframes moveclouds {
+  0% {
+    margin-left: 1000px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+/* End OfError Page */
+/*--------------------------- Button Class Style ---------------------------*/
+
+.button-jadwal {
+  background: #ffffff;
+  padding: 15px 30px;
+  color: #51dfa2;
+  border-radius: 2pt;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+
+.button-jadwal:hover {
+  background: #51dfa2;
+  color: #ffffff !important;
+  font-weight: bold;
+  border: solid 1.5pt #ffffff !important;
+  letter-spacing: 1pt;
+}
+
+.button-contact {
+  background: #51dfa2 !important;
+  font-size: 12pt;
+  color: #f3f3f3 !important;
+  border: solid 0.5pt #36c386 !important;
+  padding: 10px 30px 10px 30px;
+  border-radius: 2pt;
+  transition: 0.3s;
+}
+
+.button-contact:hover {
+  background: #2aad75 !important;
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+/*--------------------------- Width ---------------------------*/
+.justify-center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: #44e3ff !important;
+  flex-direction: column;
+}
+
+/*--------------------------- comming soon ----------------------------*/
+.comming-soon {
+  color: #2a5d56 !important;
+}
+
+.comming-soon-border {
+  border: #42424244 0.4pt solid;
+  border-radius: 15pt;
+  padding: 25px 50px 15px 50px;
+  box-shadow: 2px 4px 12px 1px rgba(0, 0, 0, 0.36);
+}
+
+.form-border-color {
+  border-color: #0ec9ec !important;
+}
+
+/*--------------------------- team style ----------------------------*/
+.team-subtitle {
+  color: #535353 !important;
+}
+
+/*--------------------------- after bootcamp style ----------------------------*/
+
+.after-title {
+  color: #6e6e6e;
+}
+
+.after-subtitle {
+  color: #9b9b9b;
+}
+
+/*--------------------------- scholarship bootcamp style ----------------------------*/
+
+.scholarship-title {
+  color: #40a798 !important;
+  font-weight: bold !important;
+}
+
+.button-scholarship {
+  background: #44db9a;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12pt;
+  border: solid 0.5pt #36c386 !important;
+  padding: 10px 30px 10px 30px;
+  border-radius: 2pt;
+  transition: 0.3s;
+}
+
+.button-scholarship:hover {
+  background: #2fb97d;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12pt;
+}
+
+.scholarship-list {
+  padding-top: 0;
+  color: #6d6d6d !important;
+  font-weight: bold !important;
+}
