@@ -15,6 +15,7 @@ const contactRouter = require("./routes/contact");
 const contactFaq = require("./routes/faq");
 const websiteRouter = require("./routes/website");
 const mobileRouter = require("./routes/mobile");
+const frontendRouter = require("./routes/frontend");
 const backendRouter = require("./routes/backend");
 const termRouter = require("./routes/term");
 const policyRouter = require("./routes/policy");
@@ -29,7 +30,7 @@ const app = express();
 
 app.use(cors());
 
-// app.use(redirectHttps([/localhost:(\d{4})/], [/\/error/], 301));
+app.use(redirectHttps([/localhost:(\d{4})/], [/\/error/], 301));
 app.use(function requireHTTPS(req, res, next) {
  // The 'x-forwarded-proto' check is for Heroku
   if (
@@ -85,6 +86,7 @@ app.use("/contact", contactRouter);
 app.use("/faq", contactFaq);
 app.use("/website", websiteRouter);
 app.use("/mobile", mobileRouter);
+app.use("/frontend", frontendRouter);
 app.use("/backend", backendRouter);
 app.use("/term-and-conditions", termRouter);
 app.use("/privacy-policy", policyRouter);
@@ -103,6 +105,7 @@ const sitemap = sm.createSitemap({
     { url: "/about", priority: 0.8, lastmodISO: "2019-05-22T13:53:13+00:00" },
     { url: "/website", priority: 0.8, lastmodISO: "2019-05-22T13:53:13+00:00" },
     { url: "/mobile", priority: 0.8, lastmodISO: "2019-05-22T13:53:13+00:00" },
+    { url: "/frontend", priority: 0.8, lastmodISO: "2019-05-24T13:53:13+00:00" },
     { url: "/backend", priority: 0.8, lastmodISO: "2019-05-24T13:53:13+00:00" },
     { url: "/contact", priority: 0.8, lastmodISO: "2019-05-22T13:53:13+00:00" },
     {
