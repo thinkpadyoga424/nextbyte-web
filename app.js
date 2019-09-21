@@ -30,7 +30,7 @@ const app = express();
 
 app.use(cors());
 
-app.use(redirectHttps([/localhost:(\d{4})/], [/\/error/], 301));
+// app.use(redirectHttps([/localhost:(\d{4})/], [/\/error/], 301));
 app.use(function requireHTTPS(req, res, next) {
  // The 'x-forwarded-proto' check is for Heroku
   if (
