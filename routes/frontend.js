@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET mobile page. */
 router.get("/", function(req, res, next) {
-  res.render("backend", { title: "Backend Development Program" });
+  res.render("frontend", { title: "Frontend Development Program" });
 });
 
 module.exports = router;

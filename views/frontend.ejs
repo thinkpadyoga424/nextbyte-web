@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document Title -->
+    <title>Nextbyte - <%= title %></title>
+    <meta
+      name="description"
+      content="Mobile Development adalah full training program selama 6 minggu dimana kamu akan di bimbing oleh mentor kami yang tentunya sudah ahli di bidangnya. Mulai dari hal yang fundamental sampai kamu bisa membuat aplikasi kamu sendiri."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <% include ./partials/head %>
+  </head>
+
+  <body>
+
+    <% include ./partials/navbar %>
+
+    <!-- page title wrap-->
+    <section
+      class="page-title-inner banner overlay6 home2-vs1-bg"
+      data-bg-img="https://www.digitalcrafts.com/img/houston-coding-boot-camp.jpg"
+    >
+      <div class="page-title-wrap crypto-patern">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col">
+              <!-- page title inner -->
+              <div
+                class="page-title text-center"
+                data-animate="fadeInUp"
+                data-delay="1.05"
+              >
+                <h1 class="about-page-banner"><%= title %> </h1>
+                <ul class="nav m-0 justify-content-center">
+                  <li><a href="/" title="Home">Home</a></li>
+                  <li>
+                    <a href="#" title="Programs - Backend Development">
+                      Program > Frontend Development</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- End of page title inner -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of page title -->
+
+    <!-- coming soon  inner -->
+    <section class="term-background pt-100 pb-100">
+      <div data-animate="fadeInUp" data-delay="1.5" class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <!-- section title -->
+            <div class="section-title type4 mb-30">
+              <span class="dosis about-page-subtitle">Program Overview</span>
+              <h1 class="overview-title">
+                Ayo buat aplikasi web kamu sekarang!
+              </h1>
+            </div>
+            <!-- End of section title -->
+
+            <!-- about our company -->
+            <div class="overview-content">
+              <p>
+                Frontend Development adalah program part-time trainig untuk kamu
+                yang ingin belajar membangun website (frontend khususnya) namun
+                tidak memiliki waktu di jam kerja karena kesibukan anda, maka program
+                part-time ini adalah pilihan yang tepat untuk kamu yang berkesibukan di
+                siang hari karena kelas ini dilaksanakan pada malam hari. Program ini
+                bersifat umum, kamu yang tidak memiliki latar belakang IT pun bisa
+                mengikutinya. Jika kamu berhasil mengikuti program ini hingga selesai,
+                kamu akan meiliki skill sebagai Frontend Developer.
+              </p>
+              <p>
+                Di kelas ini kamu akan diajarkan membangun aplikasi berbasis web yang
+                berdesain responsive dan dinamis secara best-practice menggunakan HTML-CSS-JS.
+                Anda juga akan diajarkan framework CSS yang populer seperti Bootstrap,
+                Materialize, Semantic, dll. Begitupula dengan salah satu libray/framework
+                populer javascript yaitu ReactJS dan mempelajari Redux sebagai State Management.
+                Diajarkan secara terstruktur dan secara lengkap serta bebas untuk melakukan diskusi dengan mentor.
+              </p>
+              <a
+                title="Get Started"
+                href="#mobileSylabus"
+                class="btn btn-transparent waves-effect style-4"
+                >Get Started</a
+              >
+            </div>
+            <!-- End of about our company -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Timeline -->
+    <div id="mobileSylabus">
+      <section>
+        <% include ./sections/frontend-development %>
+      </section>
+    </div>
+    <!-- End of Timeline -->
+
+    <!-- Frontend of Backend -->
+    <section class="pt-140 pb-140 home6-section-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="use--crypdrone-wrap">
+              <!-- heading title type2 -->
+              <div class="section-title-type2">
+                <img src="img/icons/exlamation.png" alt="exlamation" />
+                <h2>Benfit Mengikuti Frontend Development Program</h2>
+              </div>
+              <!--End of heading title type2 -->
+
+              <!-- use crypdrone token -->
+              <div class="use-crypdrone-token">
+                <p>
+                  Selain jaminan karir, berikut adalah beberapa
+                  benefit yang akan kamu dapatkan jika kamu mengikuti Frontend
+                  Development Program ini sampai selesai.
+                </p>
+                <!-- single use crypdrone token-->
+                <div class="single-use-crypdrone media">
+                  <div class="use-crypdrone-icon">
+                    <img src="img/icons/use-token3.svg" alt="exlamation" class="svg" />
+                  </div>
+                  <div class="use-crypdrone-details media-body">
+                    <h4>Menjadi Seorang Frontend Engineer</h4>
+                    <p>
+                      Skill profesional sebagai frontend developer akan kamu miliki
+                      dengan teknologi terkini yang sedang hangat dan banyak dicari
+                      oleh industri startup.
+                    </p>
+                  </div>
+                </div>
+                <!-- End of single use crypdrone token-->
+
+                <!-- single use crypdrone token-->
+                <div class="single-use-crypdrone media">
+                  <div class="use-crypdrone-icon">
+                    <img src="img/icons/use-token3.svg" alt="exlamation" class="svg" />
+                  </div>
+                  <div class="use-crypdrone-details media-body">
+                    <h4>Mampu Membuat Web Application</h4>
+                    <p>
+                      Tidak hanya membuat website yang dinamis dan responsive, namun
+                      dapat membuat aplikasi seperti marketplace, ticketing, event planner, dan lain-lain.
+                    </p>
+                  </div>
+                </div>
+                <!-- End of single use crypdrone token-->
+
+                <!-- single use crypdrone token-->
+                <div class="single-use-crypdrone media">
+                  <div class="use-crypdrone-icon">
+                    <img src="img/icons/use-token3.svg" alt="exlamation" class="svg" />
+                  </div>
+                  <div class="use-crypdrone-details media-body">
+                    <h4>Mampum mengintegrasikan dengan API service</h4>
+                    <p class="m-0">
+                      Dapat mengintegrasikan dengan backend melalui middleware
+                      (Redux Middleware) yang akan dipelajari dikelas ini. Bisa juga integraasi melalui 
+                      API atau GraphQL.
+                    </p>
+                  </div>
+                </div>
+                <!-- End of single use crypdrone token-->
+              </div>
+              <!--End of use crypdrone token -->
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <!-- crypdrone animate image -->
+            <div class="crypdrone-token-image">
+              <img
+                src="https://res.cloudinary.com/nextbyte-co/image/upload/v1559029244/nextbyte-web/programs/backend_fpdxcc.png"
+                alt="backend_fpdxcc"
+              />
+            </div>
+            <!--End of crypdrone animate image -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of Benefits of Backend -->
+
+    <!-- Activity -->
+    <section class="vpn-patern pt-70 pb-10 mb-60">
+        <div class="container" data-animate="fadeInUp" data-delay="0.65">
+            <div class="row">
+            <div class="col-md-6">
+                <div class="section-title mb-30">
+                <h2 class="about-page-title">Agenda Harian</h2>
+                <h4 class="mt-40">
+                    Setiap kelasnya kamu akan melakukan aktivitas yang intensif
+                    dari pukul 19:00 hinggan pukul 22:00 selama dua hari
+                    dalam seminggu. <br />
+                    Para Tech Mentor akan berusaha semaksimal mungkin menyalurkan setiap
+                    ilmu dan pengalaman nya saat proses belajar mengajar berlangsung
+                    dengan memberikan tugas-tugas yang menantang setiap kelasnya, guna
+                    melatih technical skill kamu.
+                </h4>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="table-activity">
+                <table class="table table-borderless">
+                    <thead>
+                    <tr>
+                        <th>Waktu</th>
+                        <th>Agenda</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>19:00 - 22:00</th>
+                        <td>
+                        <strong>Kelas Intensif</strong> <br />
+                        Penjelasan koding secara teknikal dan praktek coding mengerjakan task-task yang diberikan oleh Tech Mentor
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Activity -->
+
+    <!-- pricing plan -->
+    <section id="programs" class="pt-10 pb-60">
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-xl-12 col-lg-8">
+                <!-- section title -->
+                <div
+                data-animate="fadeInUp"
+                data-delay="0.6"
+                class="section-title type2 text-center mb-30"
+                >
+                <!-- <h2>Program Harga</h2> -->
+                <h2 style="color: #555;">Biaya & Jadwal Program</h2>
+                <div class="underline-wrap">
+                    <div class="unerline">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </div>
+                </div>
+                </div>
+                <!-- End of section title -->
+            </div>
+            </div>
+        
+            <!-- pricecing plan type 2 -->
+            <div class="pricing-plan type2">
+            <div class="row">
+                <div data-animate="fadeInUp" data-delay="0.7" class="col-md-4 offset-md-2 offset-lg-2">
+                <!-- single pricing plan -->
+                <div class="single--pricing-plan active waves-effect">
+                    <!--plan top -->
+                    <div class="pricing-plan-top">
+                    <div
+                        data-animate="fadeInUp"
+                        data-delay="0.7"
+                        class="plan-top-head"
+                    >
+                        <h4>
+                        Biaya Program
+                        </h4>
+                        <div class="underline-wrap">
+                        <div class="unerline theme-color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--End of plan top -->
+        
+                    <!-- pricing body -->
+                    <div class="pricing-plan-body mt-3">
+                        <div class="plantop-head-text">
+                        <h3 class="h2 price-bootcamp"><span>Rp </span>8,000,000</h3>
+                        </div>
+                        <div class="plan-top-head">
+                        <h4>Sekarang hanya</h4>
+                        <div class="underline-wrap">
+                            <div class="unerline theme-color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="plantop-head-text">
+                        <h3 class="h2"><span>Rp </span>&nbsp;5,000,000</h3>
+                        </div>
+
+                    </div>
+                    <!--End of pricing body -->
+                </div>
+                <!-- End of single pricing plan -->
+                </div>
+                <div data-animate="fadeInUp" data-delay="0.8" class="col-md-4">
+                <!-- single pricing plan -->
+                <div class="single--pricing-plan waves-effect">
+                    <!--plan top -->
+                    <div class="pricing-plan-top">
+                    <div class="plan-top-head">
+                        <h4>Jadwal Program</h4>
+                        <div class="underline-wrap">
+                        <div class="unerline theme-color">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--End of plan top -->
+        
+                    <!-- pricing body -->
+                    <div class="pricing-plan-body">
+                            <div class="plantop-head-text justify-content-center">
+                            <h3>16 Pertemuan</h3>
+                            </div>
+                            <div class="text-center">
+                            </div>
+                            <div class="plantop-head-text text-center row">
+                            <div class="col-md-6">
+                                <h4>Senin & Rabu</h4>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>19:00 - 22:00</h4>
+                            </div>
+                            </div>
+                            <div class=" text-center">
+                            <a
+                                title="Ayo Daftar Sekarang!"
+                                href="/register"
+                                class="btn btn-fill"
+                                style="border: 1px solid white"
+                                >Daftar Sekarang</a
+                            >
+                            </div>
+                    </div>
+                    <!--End of pricing body -->
+                </div>
+                <!-- End of single pricing plan -->
+                </div>
+        
+            </div>
+            </div>
+            <!-- End of pricing plan type 2 -->
+        </div>
+    </section>
+    <!-- End of pricing plan -->
+        
+    <% include ./partials/footer %> <% include ./partials/script %>
+  </body>
+</html>

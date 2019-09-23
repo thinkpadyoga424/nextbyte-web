@@ -433,21 +433,29 @@
         <h2
           data-animate="fadeInUp"
           data-delay="0.8"
-          class="about-page-title text-center pb-30"
+          class="about-page-title text-center"
         >
           Hiring Partner
         </h2>
         <% include ./sections/hiring-partner %>
+        <% include ./sections/training-partner %>
       </section>
       <!-- End of Programs -->
 
-      <!-- Programs -->
-      <% include ./sections/program %>
-      <!-- End of Programs -->
+      <div style="background: #f9f9fb;">
 
-      <!-- newsleter -->
-      <% include ./sections/newsletter %>
-      <!-- End of newsletter -->
+        <!-- Programs -->
+        <% include ./sections/program %>
+        <!-- End of Programs -->
+        
+        <!-- Programs Part Time -->
+        <% include ./sections/parttime-class %>
+        <!-- End of Programs Part Time -->
+        
+        <!-- newsleter -->
+        <% include ./sections/newsletter %>
+        <!-- End of newsletter -->
+      </div>
 
       <!-- Quotes -->
       <section
