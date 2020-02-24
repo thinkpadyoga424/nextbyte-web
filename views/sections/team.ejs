@@ -1,0 +1,66 @@
+
+    <section data-animate="fadeInUp" data-delay=".80" class="pt-80 pb-70">
+        <div class="container">
+          <div class="row heading">
+            <div class="col-md-12 col-md-offset-8">
+              <h2 class="text-center bottom-line">Meet Our Team</h2>
+              <p class="subheading team-subtitle text-center">Creative Squad</p>
+            </div>
+          </div>
+  
+          <div class="row team-row">
+            <% for(var i = 0; i < data[0].length ; i++ ) { %>
+            <!-- <% if (i%2 === 0) { %>
+          <div class="row team-row">
+        <% } %> -->
+            <div class="mt-4 col-xl-4 col-lg-6 col-sm-12 team-wrap">
+              <div class="team-member text-center">
+                <div class="team-img">
+                  <img
+                    src="<%= data[0][i].avatar %>"
+                    alt="<%= data[0][i].name %>"
+                  />
+                  <div class="overlay">
+                    <div class="team-details">
+                      <text>
+                        <%= data[0][i].content %>
+                      </text>
+                      <div class="socials">
+                        <a
+                          class="mr-4"
+                          href="#"
+                          title="Facebook <%= data[0][i].name %>"
+                          ><i class="fab fa-facebook"></i
+                        ></a>
+                        <a
+                          class="mr-4"
+                          href="#"
+                          title="Twitter <%= data[0][i].name %>"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                        <a
+                          class="mr-4"
+                          href="#"
+                          title="LinkedIn <%= data[0][i].name %>"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                        <a
+                          class="mr-4"
+                          href="#"
+                          title="Email <%= data[0][i].name %>"
+                          ><i class="fa fa-envelope"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h6 class="team-title"><%= data[0][i].name %></h6>
+                <span class="team-subtitle"><%= data[0][i].job_position %></span>
+              </div>
+            </div>
+            <!-- end team member -->
+  
+            <% } %>
+          </div>
+        </div>
+      </section>
